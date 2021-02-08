@@ -247,7 +247,7 @@ button {
   transform-origin: calc(100% - 55px) top;
   opacity: 0;
   transform: scale(0) translateZ(0);
-  transition: all 0.25s ease;
+  transition: all 0.2s ease;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   z-index: 2;
 }
@@ -1006,8 +1006,9 @@ button {
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
 }
 
-.category:hover i {
+.category:hover .category__heading-icon {
   transform: rotate(90deg);
+  font-size: 1.11rem;
   /* margin-right: 6.5px; */
 }
 
@@ -1022,7 +1023,7 @@ button {
 }
 
 .category__heading-icon {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-right: 4px;
   transition: all 0.2s ease-out;
   transform: rotate(0deg);
