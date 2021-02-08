@@ -246,16 +246,15 @@ button {
   cursor: pointer;
   transform-origin: calc(100% - 55px) top;
   opacity: 0;
-  transform: scale(0);
-  transition: all 0.2s ease-out;
+  transform: scale(0) translateZ(0);
+  transition: all 0.25s ease;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   z-index: 2;
 }
 
 .header__navbar-item--has-notify:hover .header__notify {
-  transform: scale(1) ;
   opacity: 1;
-  display: block;
+  transform: scale(1) ;
 }
 
 .header__notify::before {
@@ -693,9 +692,9 @@ button {
   width: 400px;
   border-radius: 2px;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
-  transform: scale(0);
+  transform: scale(0) translateZ(0);
   opacity: 0;
-  transition: all 0.2s ease-out;
+  transition: all 0.2s ease;
   transform-origin: calc(100% - 32px) top;
   cursor: pointer;
   z-index: 1;
@@ -1009,7 +1008,7 @@ button {
 
 .category:hover i {
   transform: rotate(90deg);
-  margin-right: 6.5px;
+  /* margin-right: 6.5px; */
 }
 
 .category__heading-wrapper {
@@ -1023,7 +1022,7 @@ button {
 }
 
 .category__heading-icon {
-  font-size: 1.18rem;
+  font-size: 1.1rem;
   margin-right: 4px;
   transition: all 0.2s ease-out;
   transform: rotate(0deg);

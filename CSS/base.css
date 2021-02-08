@@ -64,6 +64,18 @@
   }
 }
 
+@keyframes headerNotifyGrowth {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 /* Responsive */
 .grid__row {
   display: flex;
