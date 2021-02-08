@@ -1004,12 +1004,12 @@ button {
 .category {
   border-radius: 2px;
   background-color: white;
-  box-shadow: 0 1px 1px 0 rgba(0,0,0,.05);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
 }
 
 .category:hover i {
   transform: rotate(90deg);
-  margin-right: 6px;
+  margin-right: 6.5px;
 }
 
 .category__heading-wrapper {
