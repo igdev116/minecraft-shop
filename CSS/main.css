@@ -1390,7 +1390,7 @@ i.home-product-item__like-icon-fill {
 }
 
 .footer__heading {
-  font-size: 1.2rem;
+  font-size: 1.05rem;
   text-transform: uppercase;
   color: var(--text-color);
 }
@@ -1401,7 +1401,7 @@ i.home-product-item__like-icon-fill {
 }
 
 .footer-item__link {
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: #737373;
   padding: 2px 0;
   display: flex;
@@ -1413,7 +1413,7 @@ i.home-product-item__like-icon-fill {
 }
 
 .footer-item__icon {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin: -1px 8px 0 0;
 }
 
