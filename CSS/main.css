@@ -152,6 +152,7 @@ button {
   font-size: 0.9rem;
   color: white;
   z-index: 1;
+  cursor: pointer;
 }
 
 .header__navbar-icon-link {
@@ -247,7 +248,7 @@ button {
   transform-origin: calc(100% - 48px) top;
   opacity: 0;
   transform: scale(0) translateZ(0);
-  transition: all 0.2s ease;
+  transition: all 0.25s ease;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   z-index: 2;
 }
@@ -409,12 +410,14 @@ button {
 
 .auth-form__heading {
   font-size: 1.6rem;
+  text-transform: capitalize;
 }
 
 .auth-form__switch-btn {
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--var-color);
+  text-transform: capitalize;
   cursor: pointer;
 }
 
@@ -694,7 +697,7 @@ button {
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
   transform: scale(0) translateZ(0);
   opacity: 0;
-  transition: all 0.2s ease;
+  transition: all 0.25s ease;
   transform-origin: calc(100% - 32px) top;
   cursor: pointer;
   z-index: 1;
