@@ -815,7 +815,3 @@ function handleForms() {
 
 handleForms();
 
-// let buyInfoBtn = document.querySelector('.product-btn-main__buying'); // get element of the info page buy button 
-// buyInfoBtn.classList.add = ('href', 'product-cart.html')
-// buyInfoBtn.onclick = () => {
-// }
