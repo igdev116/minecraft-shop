@@ -262,6 +262,7 @@
 					<div class="col l-2 m-0 c-0">
 						<nav class="category">
 							<div class="category__heading-wrapper">
+								<!-- <i class="category__heading-iconfas fa-caret-square-right"></i> -->
 								<i class="category__heading-icon far fa-caret-square-right"></i>
 								<div class="category__heading">Danh mục</div>
 							</div>
@@ -421,7 +422,7 @@
 			<div class="grid wide footer__content">
 				<div class="row">
 					<div class="col l-2-4 m-4 c-6">
-						<h3 class="footer__heading">Chăm sóc khách hàng</h3>
+						<div class="footer__heading">Chăm sóc khách hàng</div>
 						<ul class="footer-list">
 							<li class="footer-item">
 								<a href="" class="footer-item__link">Trung tâm trợ giúp</a>
@@ -435,7 +436,7 @@
 						</ul>
 					</div>
 					<div class="col l-2-4 m-4 c-6">
-						<h3 class="footer__heading">Giới thiệu</h3>
+						<div class="footer__heading">Giới thiệu</div>
 						<ul class="footer-list">
 							<li class="footer-item">
 								<a href="" class="footer-item__link">Giới thiệu</a>
@@ -449,7 +450,7 @@
 						</ul>
 					</div>
 					<div class="col l-2-4 m-4 c-6">
-						<h3 class="footer__heading">Danh mục</h3>
+						<div class="footer__heading">Danh mục</div>
 						<ul class="footer-list">
 							<li class="footer-item">
 								<a href="" class="footer-item__link">Đồ chơi</a>
@@ -463,7 +464,7 @@
 						</ul>	
 					</div>		
 					<div class="col l-2-4 m-4 c-6">
-						<h3 class="footer__heading">Theo dõi chúng tôi</h3>
+						<div class="footer__heading">Theo dõi chúng tôi</div>
 						<ul class="footer-list">
 							<li class="footer-item">
 								<a href="" class="footer-item__link">
@@ -486,7 +487,7 @@
 						</ul>
 					</div>
 					<div class="col l-2-4 m-8 c-12">
-						<h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
+						<div class="footer__heading">Vào cửa hàng trên ứng dụng</div>
 						<div class="footer__download">
 							<img src="Images/pickaxe.png" alt="Download QR" class="footer__download-qr"></img>
 							<div class="footer__download-apps">
@@ -519,21 +520,17 @@
 		    <form id="register-form" class="auth-form">
 				<div class="auth-form__container">
 					<div class="auth-form__header">
-						<h3 class="auth-form__heading">Đăng ký</h3>
-						<span class="auth-form__switch-btn">Đăng nhập</span>
+						<div class="auth-form__heading">Đăng ký</div>
 					</div>
 
 					<div class="auth-form__groups">
 						<div class="auth-form__group">
-							<label for="email" class="auth-form__label">Email</label>
 							<input id="email" rule="email" type="text" class="auth-form__input" placeholder="Email của bạn" />
 						</div>
 						<div class="auth-form__group">
-							<label for="password" class="auth-form__label">Mật khẩu</label>
 							<input id="password" rule="password" type="password" class="auth-form__input" placeholder="Mật khẩu của bạn" />
 						</div>
 						<div class="auth-form__group">
-							<label for="password_confirmation" class="auth-form__label">Nhập lại mật khẩu</label>
 							<input id="password_confirmation" rule="password_confirmation" type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu của bạn" /><span class="auth-form__message"></span>
 						</div>
 					</div>
@@ -544,6 +541,11 @@
 							<a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
 							<a href="" class="auth-form__text-link">Chính sách bảo mật</a>
 						</p>
+
+						<div class="auth-form__switch-wrapper">
+							<span class="auth-form__switch-text">Bạn đã có tài khoản?</span>
+							<span class="auth-form__switch-btn">Đăng nhập</span>
+						</div>
 					</div>
 
 					<div class="auth-form__controls">
@@ -573,17 +575,14 @@
 			<form id="login-form" class="auth-form">
 				<div class="auth-form__container">
 					<div class="auth-form__header">
-						<h3 class="auth-form__heading">Đăng nhập</h3>
-						<span class="auth-form__switch-btn">Đăng ký</span>
+						<div class="auth-form__heading">Đăng nhập</div>
 					</div>
 
 					<div class="auth-form__groups">
 						<div class="auth-form__group">
-							<label for="email" class="auth-form__label">Email</label>
 							<input id="email" rule="email" type="text" class="auth-form__input" placeholder="Email của bạn" />
 						</div>
 						<div class="auth-form__group">
-							<label for="password" class="auth-form__label">Mật khẩu</label>
 							<input id="password" rule="password" type="password" class="auth-form__input" placeholder="Mật khẩu của bạn" />
 						</div>
 					</div>
@@ -599,6 +598,11 @@
 					<div class="auth-form__controls">
 						<button class="btn auth-form__controls-back">TRỞ LẠI</button>
 						<button class="btn btn--primary">ĐĂNG NHẬP</button>
+					</div>
+					
+					<div class="auth-form__switch-wrapper">
+						<span class="auth-form__switch-text">Bạn chưa có tài khoản?</span>
+						<span class="auth-form__switch-btn">Đăng ký</span>
 					</div>
 				</div>
 				

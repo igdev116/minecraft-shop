@@ -38,7 +38,7 @@ function Validator(form, childForm, min, str) {
                 let inpSpan = inpParent.querySelector('span.error-message');
 
                 inpSpan.innerHTML = message;
-                inpSpan.style = 'color: red; font-size: 1rem';
+                inpSpan.style = 'color: red; font-size: 0.95rem';
                 inpEl.style = `border-color: ${color}`;
             }
             inpEl = inpParent;

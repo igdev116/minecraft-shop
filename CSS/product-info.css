@@ -33,29 +33,26 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    height: 90px;
     width: 450px;
     overflow: hidden;
     margin: 10px -5px 0;
 }
 
-.product__card-wrapper {
-    padding: 5px;
-    width: 20%;
+.product__card-container {
+    width: 100%;
+    display: flex;
 }
 
 .product__card {
-    position: relative;
-    width: 100%;
-    height: 80px;
-    object-fit: contain;
+    margin: 3px;
+    width: 20%;
+    border: 2px solid transparent;
 }
 
-.product__card:before {
-    position: absolute;
+.product__card-img {
     width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+    object-fit: contain;
 }
 
 .product__card:hover {
@@ -81,9 +78,9 @@
     left: 5px;
 }
 
-/* .product__cards-btn--first:hover + .product__card {
+.product__cards-btn--first:hover ~ .product__card {
     border: 2px solid var(--var-color);
-} */
+}
 
 .product__cards-btn--last {
     right: 5px;

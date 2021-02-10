@@ -388,12 +388,17 @@ button {
   z-index: 10000;
 }
 
+#login-form .auth-form__switch-wrapper {
+  margin-top: 15px;
+}
+
 /* Authen Modal */
 .auth-form {
-  width: 500px;
+  width: 450px;
   background-color: white;
   border-radius: 5px;
   overflow: hidden; /* Hidden Children*/
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.14);
 }
 
 .auth-form__container {
@@ -404,18 +409,16 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 12px;
-  margin: 10px;
+  padding: 25px 0 15px 0;
 }
 
 .auth-form__heading {
-  font-size: 1.6rem;
+  font-size: 1.25rem;
   text-transform: capitalize;
 }
 
 .auth-form__switch-btn {
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 0.9rem;
   color: var(--var-color);
   text-transform: capitalize;
   cursor: pointer;
@@ -426,7 +429,13 @@ button {
 }
 
 .auth-form__group {
-  padding-bottom: 24px;
+  padding-bottom: 12px;
+}
+
+.auth-form__group 
+input[type="text"],
+input[type="password"] {
+  font-size: 0.93rem;
 }
 
 .auth-form__label {
@@ -435,7 +444,7 @@ button {
 
 .auth-form__input {
   width: 100%;
-  height: 40px;
+  height: 45px;
   margin: 8px 0 2px;
   padding: 0 12px;
   border: 1px solid #8d8d8d;
@@ -451,13 +460,8 @@ button {
   border-color: #595959;
 }
 
-.auth-form__aside {
-  margin-top: 20px;
-  font-weight: 600;
-}
-
 .auth-form__policy-text {
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-align: center;
   padding: 0 12px;
 }
@@ -466,26 +470,49 @@ button {
   color: var(--var-color);
 }
 
+.auth-form__text-link:hover {
+  color: #f8642e;
+}
+
+.auth-form__switch-wrapper {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.auth-form__switch-text {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.26);
+}
+
 .auth-form__controls {
   display: flex;
   justify-content: flex-end;
-  margin-top: 50px;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.auth-form__controls > button {
+  height: 36px;
+  line-height: 36px;
+}
+
+.auth-form__controls > .btn--primary {
+  font-size: 0.9rem;
 }
 
 .auth-form__controls-back {
+  background-color: transparent;
   margin-right: 8px;
-}
-
-.auth-form__controls-back:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid #8D8D8D;
+  color: #8D8D8D;
+  font-size: 0.9rem;
 }
 
 .auth-form__socials {
-  background-color: #ededed;
   padding: 20px 36px;
   display: flex;
   justify-content: space-between;
-  margin-top: 24px;
+  margin-top: 15px;
 }
 
 .auth-form__socials-icon {
@@ -494,16 +521,31 @@ button {
 
 .auth-form__socials--facebook {
   color: white;
-  background-color: #3a59a8;
+  background-color: #1877f2;
+  min-width: 180px;
+}
+
+.auth-form__socials--facebook:hover {
+  background-color: #166fe5;
 }
 
 .auth-form__socials--google {
-  color: #666;
-  background-color: white;
+  color: white;
+  background-color: #E94235;
+  min-width: 180px;
+}
+
+.auth-form__socials--google:hover {
+  background-color: #df2f23ef;
 }
 
 .auth-form__socials-title {
-  margin: 0 12px;
+  font-size: 0.875rem;
+  margin: 0 5px 0 12px;
+}
+
+.auth-form__aside {
+  margin-top: 20px;
 }
 
 .auth-form__help {
@@ -514,6 +556,7 @@ button {
 
 .auth-form__help-link {
   color: #9b9b9b;
+  font-size: 0.9rem;
 }
 
 .auth-form__help-separate {
@@ -1004,36 +1047,44 @@ button {
 }
 
 .category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8px;
   border-radius: 2px;
   background-color: white;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
 }
 
 .category:hover .category__heading-icon {
   transform: rotate(90deg);
-  font-size: 1.11rem;
+  font-size: 1.2rem;
   /* margin-right: 6.5px; */
 }
 
 .category__heading-wrapper {
   display: flex;
   align-items: center;
-  padding: 12px 16px 0 19px;
-  color: var(--text-color);
-  margin-bottom: 5px;
+  background-color: rgba(0, 0, 0, 0.04);
+  padding-left: 8px;
+  margin: 5px;
   line-height: 34px;
-  height: 34px;
+  height: 42px;
+  width: 160px;
+  border-radius: 4px;
+  color: rgb(97, 96, 96);
 }
 
 .category__heading-icon {
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin-right: 4px;
   transition: all 0.2s ease-out;
   transform: rotate(0deg);
 }
 
 .category__heading {
-  font-size: 1.3rem;
+  font-size: 1.05rem;
+  font-weight: 600;
 }
 
 .category-list {
@@ -1393,19 +1444,21 @@ i.home-product-item__like-icon-fill {
 }
 
 .footer__heading {
-  font-size: 1.05rem;
+  font-size: 0.85rem;
+  font-weight: 700;
   text-transform: uppercase;
-  color: var(--text-color);
+  color: rgba(0, 0, 0, 0.54);
 }
 
 .footer-list {
+  margin-top: 5px;
   padding-left: 0;
   list-style: none;
 }
 
 .footer-item__link {
-  font-size: 0.95rem;
-  color: #737373;
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.54);
   padding: 2px 0;
   display: flex;
   align-items: center;
@@ -1425,8 +1478,9 @@ i.home-product-item__like-icon-fill {
 }
 
 .footer__download-qr {
+  margin-top: 8px;
   width: 80px;
-  height: 80px;
+  object-fit: contain;
 }
 
 .footer__download-apps {
