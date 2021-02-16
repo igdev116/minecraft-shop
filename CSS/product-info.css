@@ -46,6 +46,7 @@
 
 .product__card {
     margin: 3px;
+    cursor: pointer;
     width: 20%;
     border: 2px solid transparent;
 }
@@ -57,7 +58,6 @@
 
 .product__card:hover {
     border: 2px solid var(--var-color);
-    cursor: pointer;
 }
 
 .product__cards-btn {

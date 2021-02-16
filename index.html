@@ -260,45 +260,19 @@
 			<div class="grid wide">
 				<div class="row sm-gutter app__content">
 					<div class="col l-2 m-0 c-0">
-						<nav class="category">
-							<div class="category__heading-wrapper">
-								<!-- <i class="category__heading-iconfas fa-caret-square-right"></i> -->
-								<i class="category__heading-icon far fa-caret-square-right"></i>
-								<div class="category__heading">Danh mục</div>
-							</div>
-							<ul class="category-list">				
-								<li class="category-item category-item--active">
-									<a href="#" class="category-item__link">Đồ bán chạy hôm nay</a>
-								</li>
-								<li class="category-item">
-									<a href="#" class="category-item__link">Bình giữ nhiệt</a>
-								</li>
-								<li class="category-item">
-									<a href="#" class="category-item__link">Bộ lắp ghép Minecraft</a>
-								</li>
-								<li class="category-item">
-									<a href="#" class="category-item__link">Hộp bút chì Creeper</a>
-								</li>
-								<li class="category-item">
-									<a href="#" class="category-item__link">Túi khăn tắm 3 hộp</a>
-								</li>
-								<li class="category-item">
-									<a href="#" class="category-item__link">Balo Creeper</a>
-								</li>
-								<li class="category-item">
-									<a href="#" class="category-item__link">Móc khóa Diamond Word</a>
-								</li>
-								<li class="category-item">
-									<a href="#" class="category-item__link">Bộ lắp ghép Bàn chế tạo</a>
-								</li>
-								<li class="category-item">
-									<a href="#" class="category-item__link">Hộp thẻ bài 4 người</a>
-								</li>
-								<li class="category-item">
-									<a href="#" class="category-item__link">Cốc lạc đà Llama</a>
-								</li>
-							</ul>
-						</nav>
+						<div class="category-pc">
+							<nav class="category">
+								<div class="category__heading-wrapper">
+									<i class="category__heading-icon fas fa-th-large"></i>
+									<div class="category__heading">Danh Mục</div>
+								</div>
+								
+								<!-- Content category items -->
+								<ul class="category-list">				
+									
+								</ul>
+							</nav>
+						</div>
 					</div>	
 
 					<div class="col l-10 m-12 c-12">
@@ -537,7 +511,7 @@
 					
 					<div class="auth-form__aside">
 						<p class="auth-form__policy-text">
-							Bằng việc đăng ký, bạn đã đồng ý với Minecraft-Shop
+							Bằng việc đăng ký, bạn đã đồng ý với Minecraft Shop
 							<a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
 							<a href="" class="auth-form__text-link">Chính sách bảo mật</a>
 						</p>
@@ -626,11 +600,14 @@
 	</div>
 </body>
 	
-<script src="./Javascript/bugs.js"></script>
+<script src="./Javascript/index.js"></script>
+<script src="./Javascript/general-bugs.js"></script>
+
+<script src="./Javascript/handle-form.js"></script>
 <script src="./Javascript/validator.js"></script>
 <script>
 	Validator('#register-form', '.auth-form__group', 3);
 	Validator('#login-form', '.auth-form__group', 3);
 </script>
-<script src="./Javascript/base.js"></script>
+
 </html>

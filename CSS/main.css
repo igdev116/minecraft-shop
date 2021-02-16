@@ -142,7 +142,7 @@ button {
 }
 
 .header__navbar-item-has-qr:hover .header__qr {
-  display: block;
+  display: flex;
 }
 
 .header__navbar-item,
@@ -192,11 +192,13 @@ button {
 
 .header__qr {
   width: 186px;
+  display: flex;
+  flex-direction: column;
   background-color: white;
   position: absolute;
   left: 0;
   top: 140%;
-  padding: 8px;
+  padding: 8px 8px 0 8px;
   border-radius: 2px;
   display: none;
   box-shadow: 1px 2px 3px -2px rgba(0, 0, 0, 0.8);
@@ -214,24 +216,27 @@ button {
 
 .header__qr-img {
   width: 90%;
-  margin: 0px 0px 15px 8.3px;
+  align-self: center;
 }
 
 .header__qr-apps {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 35px;
 }
 
 .header__qr-link:nth-child(1) {
-  margin-left: 10px;
+  margin-left: 7px;
 }
 
 .header__qr-link:nth-child(2) {
-  margin-right: 8px;
+  margin-right: 7px;
 }
 
 .header__qr-dowload-img {
-  height: 24px;
+  width: 74px;
+  object-fit: contain;
 }
 
 /* Header Notification */
@@ -1049,36 +1054,26 @@ input[type="password"] {
 .category {
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding-top: 8px;
-  border-radius: 2px;
-  background-color: white;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
-}
-
-.category:hover .category__heading-icon {
-  transform: rotate(90deg);
-  font-size: 1.2rem;
-  /* margin-right: 6.5px; */
 }
 
 .category__heading-wrapper {
   display: flex;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.04);
-  padding-left: 8px;
-  margin: 5px;
+  background-color: white;
   line-height: 34px;
-  height: 42px;
-  width: 160px;
-  border-radius: 4px;
-  color: rgb(97, 96, 96);
+  height: 44px;
+  width: 98%;
+  padding-left: 12px;
+  border-radius: 5px;
+  color: rgb(102, 102, 102);
+  box-shadow: 0 1.2px 3px 0 rgba(0, 0, 0, 0.15);
+  margin-bottom: 3px;
 }
 
 .category__heading-icon {
-  font-size: 1.1rem;
-  margin-right: 4px;
-  transition: all 0.2s ease-out;
+  font-size: 1.05rem;
+  margin-right: 4.3px;
   transform: rotate(0deg);
 }
 
@@ -1091,38 +1086,45 @@ input[type="password"] {
   padding: 0 0 8px 0;
   list-style: none;
   margin: 0;
+  width: 100%;
 }
 
 .category-item {
-  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  margin: 10px 0;
+  line-height: 30px;
+  justify-content: flex-end;
 }
 
-.category-item:first-child::before {
-  display: none;
-}
-
-.category-item::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 20px;
-  left: 20px;
-  border-top: 1px solid #e1e1e1;
-}
-
-.category-item--active .category-item__link {
+.category-item__icon {
+  min-width: 9px;
+  opacity: 0;
+  transition: opacity 110ms ease-out;
   color: var(--var-color);
+}
+
+.category-item i {
+  font-size: 1rem;
+}
+
+.category-item:hover .category-item__icon,
+.category-item--active .category-item__icon {
+  opacity: 1;
 }
 
 .category-item__link {
   position: relative;
-  font-size: 0.95rem;
+  font-size: 0.97rem;
   color: var(--text-color);
-  padding: 12px 20px;
   display: block;
+  width: 95%;
 }
 
-.category-item__link:hover {
+.category-item:hover i,
+.category-item--active i, 
+.category-item--active .category-item__link {
   color: var(--var-color);
 }
 
@@ -1392,7 +1394,7 @@ i.home-product-item__like-icon-fill {
 .product-favourite i {
   color: white;
   font-size: 0.7rem;
-  margin: 0 3px 0 5px;
+  margin: 0 1px 0 5px;
 }
 
 .product-sale-off {
@@ -1444,7 +1446,7 @@ i.home-product-item__like-icon-fill {
 }
 
 .footer__heading {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 700;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.54);
@@ -1457,7 +1459,7 @@ i.home-product-item__like-icon-fill {
 }
 
 .footer-item__link {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   color: rgba(0, 0, 0, 0.54);
   padding: 2px 0;
   display: flex;
@@ -1475,10 +1477,11 @@ i.home-product-item__like-icon-fill {
 
 .footer__download {
   display: flex;
+  margin-top: 8px;
 }
 
 .footer__download-qr {
-  margin-top: 8px;
+  /* margin-top: 8px; */
   width: 80px;
   object-fit: contain;
 }
@@ -1491,7 +1494,8 @@ i.home-product-item__like-icon-fill {
 }
 
 .footer__download-app-img {
-  height: 23px;
+  width: 75px;
+  object-fit: contain;
 }
 
 .footer__download-app-link {

@@ -1,211 +1,3 @@
-const products = [
-    {   
-        id: 0,
-        img: 'https://cdn.shopify.com/s/files/1/0251/2155/4510/products/7652p_262c_1x_e931ecde-ec21-47ef-96eb-8424c3913890_800x.jpg?v=1608318433',
-        name: '[KHAI TRƯƠNG 149K-219K] Chuỗi Balo, Túi xách Minecraft được giảm giá đặc biệt nhân ngày mở bán',
-        oldPrice: '1.500.000đ',
-        curPrice: '1.200.000đ',
-        sold: 12,
-        brand: 'Minecraft',
-        origin: 'American',
-        react: 'Yêu thích',
-        per: 23,
-        label: 'GIẢM',
-        link: 'product-info.html',
-        liked: '2,1',
-        rev: 78, 
-        oldPriceInfo: '₫220.000 - ₫396.000',
-        curPriceInfo: '₫149.000 - ₫219.000',
-        available: 1100,
-        owner: 'toykids',
-        revTotal: 220,
-        resRate: 95,
-        join: 6,
-        proQnt: 14,
-        resTime: 'trong vài phút',
-        follower: '2,3',
-        material: 'Vải',
-        from: 'Quận Hoàng Mai, Hà Nội',
-        depot: 1099
-    },
-    {   
-        id: 0,
-        img: 'https://cdn.shopify.com/s/files/1/0251/2155/4510/products/9283p_28c_2x_9cc4830c-d6c2-43f8-b3dd-10fb4081fcd2_800x.jpg?v=1607528622',
-        name: 'Bộ ghim cừu Minecraft MINECON Earth 2018',
-        oldPrice: '2.500.000đ',
-        curPrice: '300.000đ',
-        sold: 33,
-        brand: 'Minecraft',
-        origin: 'American',
-        react: 'Yêu thích',
-        per: 33,
-        label: 'GIẢM',
-        link: 'product-info.html'
-    },
-    {   
-        id: 0,
-        img: 'https://cdn.shopify.com/s/files/1/0251/2155/4510/products/11146p_99c_1x_cd2633cf-fc5d-40b4-8f73-1e7bc1535188_800x.jpg?v=1611763680',
-        name: 'Lô gấu bông Minecraft Dungeons Mini',
-        oldPrice: '500.000đ',
-        curPrice: '250.000đ',
-        sold: 11,
-        brand: 'Minecraft',
-        origin: 'American',
-        react: 'Yêu thích',
-        per: 12,
-        label: 'GIẢM',
-        link: 'product-info.html'
-    },
-    {   
-        id: 0,
-        img: 'https://cdn.shopify.com/s/files/1/0251/2155/4510/products/8316p_99c_1x_4317c0a9-8c2d-4f38-9a2d-61e03c14001b_800x.jpg?v=1607458896',
-        name: 'Trọn bộ Stiker Minecraft Education Edition',
-        oldPrice: '300.000đ',
-        curPrice: '150.000đ',
-        sold: 112,
-        brand: 'Minecraft',
-        origin: 'American',
-        react: 'Yêu thích',
-        per: 71,
-        label: 'GIẢM',
-        link: 'product-info.html'
-    },
-    {   
-        id: 0,
-        img: 'https://cdn.shopify.com/s/files/1/0251/2155/4510/products/3942p_21c_1x_3c19c696-c546-4248-814a-042ebdb0df20_800x.jpg?v=1610059305',
-        name: 'Áo thun cao cấp tượng Minecraft',
-        oldPrice: '690.000đ',
-        curPrice: '250.000đ',
-        sold: 13,
-        brand: 'Minecraft',
-        origin: 'American',
-        react: 'Yêu thích',
-        per: 61,
-        label: 'GIẢM',
-        link: 'product-info.html'
-    },{   
-        id: 0,
-        img: 'https://cdn.shopify.com/s/files/1/0251/2155/4510/products/7711p_99c_4x_768bb411-b608-4c24-b20a-5bbf6bb9f237_800x.jpg?v=1611172100',
-        name: 'Ly gốm sứ Minecraft Zombie',
-        oldPrice: '570.000đ',
-        curPrice: '350.000đ',
-        sold: 13,
-        brand: 'Minecraft',
-        origin: 'American',
-        react: 'Yêu thích',
-        per: 11,
-        label: 'GIẢM',
-        link: 'product-info.html'
-    },
-    {   
-        id: 0,
-        img: 'https://cdn.shopify.com/s/files/1/0251/2155/4510/products/10758p_99c_1x_800c358a-9c22-4488-9565-93668c38053e_800x.jpg?v=1610399275',
-        name: 'Móc khóa lợn bám bùn Minecraft Earth',
-        oldPrice: '30.000đ',
-        curPrice: '12.000đ',
-        sold: 141,
-        brand: 'Minecraft',
-        origin: 'American',
-        react: 'Yêu thích',
-        per: 16,
-        label: 'GIẢM',
-        link: 'product-info.html'
-    },
-    {   
-        id: 0,
-        img: 'https://cdn.shopify.com/s/files/1/0251/2155/4510/products/9489p_28c_2x_847989c3-a873-4f92-9abd-a39503228363_800x.jpg?v=1610059374',
-        name: 'Hộp ăn trưa gia đình Miner',
-        oldPrice: '950.000đ',
-        curPrice: '720.000đ',
-        sold: 9,
-        brand: 'Minecraft',
-        origin: 'American',
-        react: 'Yêu thích',
-        per: 5,
-        label: 'GIẢM',
-        link: 'product-info.html'
-    },
-    {   
-        id: 0,
-        img: 'https://cdn.shopify.com/s/files/1/0251/2155/4510/products/6627p_13c_1x_93708f07-c3e6-424d-a218-ebb96fc2dc20_800x.jpg?v=1610059296',
-        name: 'Thắt lưng Creeper Minecraft',
-        oldPrice: '350.000đ',
-        curPrice: '129.000đ',
-        sold: 2,
-        brand: 'Minecraft',
-        origin: 'American',
-        react: 'Yêu thích',
-        per: 65,
-        label: 'GIẢM',
-        link: 'product-info.html'
-    },
-    {   
-        id: 0,
-        img: 'https://cdn.shopify.com/s/files/1/0251/2155/4510/products/10371p_99c_2x_06035991-bd12-4846-a531-fcfe22c50d62_800x.jpg?v=1610399275',
-        name: 'Móc khóa Steve trở về từ địa ngục',
-        oldPrice: '30.000đ',
-        curPrice: '19.000đ',
-        sold: 122,
-        brand: 'Minecraft',
-        origin: 'American',
-        react: 'Yêu thích',
-        per: 70,
-        label: 'GIẢM',
-        link: 'product-info.html'
-    }
-]
-
-// handle and render products
-function renderProducts() {
-    let productElements = document.querySelector('.home-product .row');
-    let productItem = '';
-
-    for (let product of products) {
-        productItem += 
-        `<div class="col l-2-4 m-4 c-6">
-            <a href="product-info.html" id="${product.id}" class="home-product-item">
-                <img src=" ${product.img}" class="home-product-item__img">
-                <div class="home-product-item__name"> ${product.name} </div>
-                <div class="home-product-item__price">
-                    <span class="home-product-item__price-old"> ${product.oldPrice} </span>
-                    <span class="home-product-item__price-current"> ${product.curPrice} </span>
-                </div>
-                <div class="home-product-item__action">
-                    <span class="home-product-item__like home-product-item__like--liked">
-                        <i class="home-product-item__like-icon-empty far fa-heart"></i>
-                        <i class="home-product-item__like-icon-fill fas fa-heart"></i>
-                    </span>
-                    <div class="home-product-item__rating">
-                        <i class="home-product-item__star--gold fas fa-star"></i>
-                        <i class="home-product-item__star--gold fas fa-star"></i>
-                        <i class="home-product-item__star--gold fas fa-star"></i>
-                        <i class="home-product-item__star--gold fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <span class="home-product-item__sold"> ${product.sold + ' đã bán'} </span>
-                </div>
-                <div class="home-product-item__origin">
-                    <span class="home-product-item__brand"> ${product.brand} </span>
-                    <span class="home-product-item__origin-name"> ${product.origin} </span>
-                </div>
-                <div class="product-favourite">
-                    <i class="fas fa-check"></i>
-                    <span> ${product.react} </span>
-                </div>
-                <div class="product-sale-off">
-                    <span class="product-sale-off__percent"> ${product.per}% </span>
-                    <span class="product-sale-off__label"> ${product.label} </span>
-                </div>
-            </a>
-        </div>`
-    }
-    
-    if (productElements) {
-        productElements.innerHTML = productItem;
-    }
-}
-
-
 function renderProductInfo() {
     let productInfo =
     `<div class="grid wide" style="padding-top: 25px;">
@@ -259,7 +51,7 @@ function renderProductInfo() {
                         </div>
                         <div class="product__liking">
                             <i class="product__action-icon product__action-icon--liking far fa-heart"></i>
-                            <a class="text">Đã thích (${product.liked}k)</a>
+                            <a class="text">Đã thích (${pageProduct.liked}k)</a>
                         </div>
                     </div>
                 </div>
@@ -286,21 +78,21 @@ function renderProductInfo() {
                             </div>
                         </div>
                         <div class="product__status-reviewing">
-                            <span class="product__status-reviewing-qnt underscore">${product.rev}</span>
+                            <span class="product__status-reviewing-qnt underscore">${pageProduct.rev}</span>
                             <span class="product__status-text pr-text">Đánh Giá</span>
                         </div>
                         <div class="product__status-sold">
-                            <span class="product__status-sold-qnt">${product.sold}</span>
+                            <span class="product__status-sold-qnt">${pageProduct.sold}</span>
                             <span class="product__status-text pr-text">Đã Bán</span>
                         </div>
                     </div>
                     
                     <div class="product__price">
                         <div class="product__price-main">
-                            <span class="product__price-old">${product.oldPriceInfo}</span>
+                            <span class="product__price-old">${pageProduct.oldPriceInfo}</span>
                             <div class="product__price-current">
-                                <span class="product__price-new">${product.curPriceInfo}</span>
-                                <span class="product__price-label bgr-orange">${product.per}% GIẢM</span>
+                                <span class="product__price-new">${pageProduct.curPriceInfo}</span>
+                                <span class="product__price-label bgr-orange">${pageProduct.per}% GIẢM</span>
                             </div>
                         </div>
                         <div class="product__price-slogan">
@@ -381,7 +173,7 @@ function renderProductInfo() {
                                     <i class="shop__qnt-btn-icon fas fa-plus"></i>
                                 </button>
                             </div>
-                            <div class="product__qnt-note">${product.available} sản phẩm có sẵn</div>
+                            <div class="product__qnt-note">${pageProduct.available} sản phẩm có sẵn</div>
                         </div>
                         
                         <div class="product-btns-main">
@@ -442,7 +234,7 @@ function renderProductInfo() {
                 </a>
 
                 <div class="product-shop__contact-container">
-                    <div class="product-shop__contact-name">${product.owner}</div>
+                    <div class="product-shop__contact-name">${pageProduct.owner}</div>
                     <div class="product-shop__contact-online-time">Online 28 Phút Trước</div>
                     <div class="product-shop__contact-main">
                         <button class="product-shop__contact-btn product-shop__contact-message-btn">
@@ -462,36 +254,36 @@ function renderProductInfo() {
                 <div class="product-shop__side-container">
                     <div class="product-shop__side-wrapper">
                         <label class="product-shop__side-label">Đánh giá</label>
-                        <div class="product-shop__side-qnt">${product.revTotal}</div>
+                        <div class="product-shop__side-qnt">${pageProduct.revTotal}</div>
                     </div>
 
                     <a href="#" class="product-shop__side-wrapper">
                         <label class="product-shop__side-label">Sản phẩm</label>
-                        <div href="#" class="product-shop__side-qnt product-shop__side-qnt--link">${product.proQnt}</div>
+                        <div href="#" class="product-shop__side-qnt product-shop__side-qnt--link">${pageProduct.proQnt}</div>
                     </a>
                 </div>
 
                 <div class="product-shop__side-container">
                     <div class="product-shop__side-wrapper">
                         <label class="product-shop__side-label">Tỉ Lệ Phản Hồi</label>
-                        <div class="product-shop__side-qnt">${product.resRate}%</div>
+                        <div class="product-shop__side-qnt">${pageProduct.resRate}%</div>
                     </div>
 
                     <div class="product-shop__side-wrapper">
                         <label class="product-shop__side-label">Thời Gian Phản Hồi</label>
-                        <div class="product-shop__side-qnt">${product.resTime}</div>
+                        <div class="product-shop__side-qnt">${pageProduct.resTime}</div>
                     </div>
                 </div>
 
                 <div class="product-shop__side-container">
                     <div class="product-shop__side-wrapper">
                         <label class="product-shop__side-label">Tham gia</label>
-                        <div class="product-shop__side-qnt">${product.join} tháng trước</div>
+                        <div class="product-shop__side-qnt">${pageProduct.join} tháng trước</div>
                     </div>
 
                     <div class="product-shop__side-wrapper">
                         <label class="product-shop__side-label">Người theo dõi</label>
-                        <div class="product-shop__side-qnt">${product.follower}k</div>
+                        <div class="product-shop__side-qnt">${pageProduct.follower}k</div>
                     </div>
                 </div>
             </div>
@@ -525,30 +317,30 @@ function renderProductInfo() {
                             </div>
 
                             <div class="product-detail__wrapper">
-                                <span class="product-detail__label">${product.brand}</span>
+                                <span class="product-detail__label">${pageProduct.brand}</span>
                                 <a class="product-detail__link" href="/">
                                     <span>No brand</span>
                                 </a>
                             </div>
 
                             <div class="product-detail__wrapper">
-                                <span class="product-detail__label">${product.material}</span>
+                                <span class="product-detail__label">${pageProduct.material}</span>
                                 <span class="product-detail__text">Vải</span>
                             </div>
 
                             <div class="product-detail__wrapper">
-                                <span class="product-detail__label">${product.origin}</span>
+                                <span class="product-detail__label">${pageProduct.origin}</span>
                                 <span class="product-detail__text">Mỹ</span>
                             </div>
 
                             <div class="product-detail__wrapper">
                                 <span class="product-detail__label">Kho hàng</span>
-                                <span class="product-detail__text">${product.depot}</span>
+                                <span class="product-detail__text">${pageProduct.depot}</span>
                             </div>
                             
                             <div class="product-detail__wrapper">
                                 <span class="product-detail__label">Gửi từ</span>
-                                <span class="product-detail__text">${product.from}</span>
+                                <span class="product-detail__text">${pageProduct.from}</span>
                             </div>
                         </div>
                     </div>
@@ -674,144 +466,34 @@ function renderProductInfo() {
     return productInfo;
 }
 
-// render products
-renderProducts();
+// BUGS
+// handle border of slide card when hover
+let slideFirstBtn = document.querySelector('.product__cards-btn--first'); // get element of first button in product info page
+let slideLastBtn = document.querySelector('.product__cards-btn--last'); // get element of last button in product info page
 
-// sort price
-function sortPrice() {
-    let firstSelection = document.querySelector('.select-input__list > li:first-child');
-    let lastSelection = document.querySelector('.select-input__list > li:last-child');
+let slideFirstCard = document.querySelector('.product__card:nth-child(1)'); // get element of first card in product info page
+let slideFifthCard = document.querySelector('.product__card:nth-child(5)'); // get element of fifth card in product info page
 
-    // Remove dots and convert to numbers from price
-    function fixPrice(num) {
-        return Number.parseInt(num.replace(/[\.]/g, ''));
+// add and remove border of slide card
+function hoverBorderOn(btn, el) {
+    btn.onmouseover = () => {
+        el.style.border = '2px solid var(--var-color)';
     }
-
-    // Sort from low to high
-    if (firstSelection) {
-        firstSelection.onclick = () => {
-            products.sort((a, b) => {
-                a = fixPrice(a.curPrice);
-                b = fixPrice(b.curPrice);
-                return a - b;
-            })
-            renderProducts();
-        }
+    btn.onmouseout = () => {
+        el.style.border = '2px solid transparent';
     }
-
-    // Sort from high to low
-    if (lastSelection) {
-        lastSelection.onclick = () => {
-            products.sort((a, b) => {
-                a = fixPrice(a.curPrice);
-                b = fixPrice(b.curPrice);
-                return b - a;
-            })
-            renderProducts();
-        }
+    el.onmouseover = () => {
+        el.style.border = '2px solid var(--var-color)';
+    }
+    el.onmouseout = () => {
+        el.style.border = '2px solid transparent';
     }
 }
 
-// re-render products after sort price 
-sortPrice();
+hoverBorderOn(slideFirstBtn, slideFirstCard);
 
-// sort products
-function sortProducts() {
-    let btnClassList = document.getElementsByClassName('home-filter__btn'); // get button class list
-    let cmBtn = btnClassList[0]; // get element of the common button
-    let newBtn = btnClassList[1]; // get element of the newest button
-    let sellBtn = btnClassList[2]; // get element of best-selling button
-
-    // remove background class of button
-    function removeBgrClass() {
-        for (let el of btnClassList) {
-            el.classList.remove('btn--primary');
-        }
-    }
-
-    if (cmBtn) {
-        cmBtn.onclick = () => {
-            removeBgrClass();
-            cmBtn.classList.add('btn--primary');
-            products.sort((a, b) => {
-                return b.sold - a.sold;
-            })
-            renderProducts();
-        }
-    }
-
-    if (newBtn) {
-        newBtn.onclick = () => {
-            location.reload();
-        }
-    }
-    
-    if (sellBtn) {
-        sellBtn.onclick = () => {
-            removeBgrClass();
-            sellBtn.classList.add('btn--primary');
-            products.sort((a, b) => {
-                return b.sold - a.sold;
-            })
-            renderProducts();
-        }
-    }
+if (slideFifthCard) {
+    hoverBorderOn(slideLastBtn, slideFifthCard);
 }
 
-// re-render products after sort options
-sortProducts();
-
-// handle register and login forms
-function handleForms() {
-    let regItem = document.getElementById('register-item'); // get element of register item
-    let logItem = document.getElementById('login-item'); // get element of register item
-
-    let modalLayer = document.querySelector('.modal'); // get element of modal layer
-
-    let regForm = document.getElementById('register-form'); // get element of register form
-    let logForm = document.getElementById('login-form'); // get element of login form
-
-    let regToLogBtn = document.querySelector('#register-form .auth-form__switch-btn'); // get element of login button from register form
-    let logToRegBtn = document.querySelector('#login-form .auth-form__switch-btn'); // get element of register button from login form
-    
-    // change the forms
-    function changeForms(showForm, hideForm) {
-        modalLayer.style.display = 'flex';
-        showForm.style.display = 'block';
-        hideForm.style.display = 'none';
-    }
-    
-    // handle register form
-    regItem.onclick = () => {
-        Validator('#register-form', '.auth-form__group', 3);
-        changeForms(regForm, logForm);
-    }
-
-    // switch to login form
-    regToLogBtn.onclick = () => {
-        Validator('#login-form', '.auth-form__group', 3);
-        changeForms(logForm, regForm);
-    }
-
-    // handle login form
-    logItem.onclick = () => {
-        Validator('#login-form', '.auth-form__group', 3);
-        changeForms(logForm, regForm);
-    }
-   
-    // switch to register form
-    logToRegBtn.onclick = () => {
-        Validator('#register-form', '.auth-form__group', 3);
-        changeForms(regForm, logForm);
-    }
-
-    // get element of overlay and remove the modal layer when clicked outside
-    document.querySelector('.modal__overlay').onclick = () => {
-        Validator('#register-form', '.auth-form__group', 3, ' ');
-        Validator('#login-form', '.auth-form__group', 3, ' ');
-        modalLayer.style.display = 'none';
-    }
-}
-
-handleForms();
-
+// complete

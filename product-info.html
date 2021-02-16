@@ -108,48 +108,6 @@
 
 				<input type="checkbox" hidden class="nav__input" id="nav-mobile-input"></input>
 
-                <!-- Nav on mobile -->
-				<div class="nav__mobile">
-					<ul class="nav__mobile-list">
-						<div class="category__heading">Danh mục</div>
-						<ul class="category-list">				
-							<li class="category-item category-item--active">
-								<a href="" class="category-item__link">Đồ bán chạy hôm nay</a>
-							</li>
-							<li class="category-item">
-								<a href="" class="category-item__link">Bình giữ nhiệt</a>
-							</li>
-							<li class="category-item">
-								<a href="" class="category-item__link">Bộ lắp ghép Minecraft</a>
-							</li>
-							<li class="category-item">
-								<a href="" class="category-item__link">Hộp bút chì Creeper</a>
-							</li>
-							<li class="category-item">
-								<a href="" class="category-item__link">Túi khăn tắm 3 hộp</a>
-							</li>
-							<li class="category-item">
-								<a href="" class="category-item__link">Balo Creeper</a>
-							</li>
-							<li class="category-item">
-								<a href="" class="category-item__link">Móc khóa Diamond Word</a>
-							</li>
-							<li class="category-item">
-								<a href="" class="category-item__link">Bộ lắp ghép Bàn chế tạo</a>
-							</li>
-							<li class="category-item">
-								<a href="" class="category-item__link">Hộp thẻ bài 4 người</a>
-							</li>
-							<li class="category-item">
-								<a href="" class="category-item__link">Cốc lạc đà Llama</a>
-							</li>
-						</ul>	
-					</ul>
-					<label for="nav-mobile-input" class="nav__mobile-close">
-						<i class="nav__mobile-close--icon fas fa-times"></i>
-					</label>
-				</div>
-
 				<label for="nav-mobile-input" class="nav__overlay"></label>
 
 				<!-- Header-with-search -->
@@ -726,7 +684,7 @@
 			<div class="grid wide footer__content">
 				<div class="row">
 					<div class="col l-2-4 m-4 c-6">
-						<h3 class="footer__heading">Chăm sóc khách hàng</h3>
+						<div class="footer__heading">Chăm sóc khách hàng</div>
 						<ul class="footer-list">
 							<li class="footer-item">
 								<a href="" class="footer-item__link">Trung tâm trợ giúp</a>
@@ -740,7 +698,7 @@
 						</ul>
 					</div>
 					<div class="col l-2-4 m-4 c-6">
-						<h3 class="footer__heading">Giới thiệu</h3>
+						<div class="footer__heading">Giới thiệu</div>
 						<ul class="footer-list">
 							<li class="footer-item">
 								<a href="" class="footer-item__link">Giới thiệu</a>
@@ -754,7 +712,7 @@
 						</ul>
 					</div>
 					<div class="col l-2-4 m-4 c-6">
-						<h3 class="footer__heading">Danh mục</h3>
+						<div class="footer__heading">Danh mục</div>
 						<ul class="footer-list">
 							<li class="footer-item">
 								<a href="" class="footer-item__link">Đồ chơi</a>
@@ -768,7 +726,7 @@
 						</ul>	
 					</div>		
 					<div class="col l-2-4 m-4 c-6">
-						<h3 class="footer__heading">Theo dõi chúng tôi</h3>
+						<div class="footer__heading">Theo dõi chúng tôi</div>
 						<ul class="footer-list">
 							<li class="footer-item">
 								<a href="" class="footer-item__link">
@@ -791,7 +749,7 @@
 						</ul>
 					</div>
 					<div class="col l-2-4 m-8 c-12">
-						<h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
+						<div class="footer__heading">Vào cửa hàng trên ứng dụng</div>
 						<div class="footer__download">
 							<img src="Images/pickaxe.png" alt="Download QR" class="footer__download-qr"></img>
 							<div class="footer__download-apps">
@@ -817,121 +775,128 @@
 
     <!-- Modal layout -->
     <div class="modal">
-        <div class="modal__overlay"></div>
+		<div class="modal__overlay"></div>
 
-        <div class="modal__body">
-            <!-- Register Form -->
-            <form id="register-form" class="auth-form">
-                <div class="auth-form__container">
-                    <div class="auth-form__header">
-                        <h3 class="auth-form__heading">Đăng ký</h3>
-                        <span class="auth-form__switch-btn">Đăng nhập</span>
-                    </div>
+		<div class="modal__body">
+			<!-- Register Form -->
+		    <form id="register-form" class="auth-form">
+				<div class="auth-form__container">
+					<div class="auth-form__header">
+						<div class="auth-form__heading">Đăng ký</div>
+					</div>
 
-                    <div class="auth-form__groups">
-                        <div class="auth-form__group">
-                            <label for="email" class="auth-form__label">Email</label>
-                            <input id="email" rule="email" type="text" class="auth-form__input" placeholder="Email của bạn" />
-                        </div>
-                        <div class="auth-form__group">
-                            <label for="password" class="auth-form__label">Mật khẩu</label>
-                            <input id="password" rule="password" type="password" class="auth-form__input" placeholder="Mật khẩu của bạn" />
-                        </div>
-                        <div class="auth-form__group">
-                            <label for="password_confirmation" class="auth-form__label">Nhập lại mật khẩu</label>
-                            <input id="password_confirmation" rule="password_confirmation" type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu của bạn" /><span class="auth-form__message"></span>
-                        </div>
-                    </div>
-                    
-                    <div class="auth-form__aside">
-                        <p class="auth-form__policy-text">
-                            Bằng việc đăng ký, bạn đã đồng ý với Minecraft-Shop
-                            <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
-                            <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
-                        </p>
-                    </div>
+					<div class="auth-form__groups">
+						<div class="auth-form__group">
+							<input id="email" rule="email" type="text" class="auth-form__input" placeholder="Email của bạn" />
+						</div>
+						<div class="auth-form__group">
+							<input id="password" rule="password" type="password" class="auth-form__input" placeholder="Mật khẩu của bạn" />
+						</div>
+						<div class="auth-form__group">
+							<input id="password_confirmation" rule="password_confirmation" type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu của bạn" /><span class="auth-form__message"></span>
+						</div>
+					</div>
+					
+					<div class="auth-form__aside">
+						<p class="auth-form__policy-text">
+							Bằng việc đăng ký, bạn đã đồng ý với Minecraft Shop
+							<a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+							<a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+						</p>
 
-                    <div class="auth-form__controls">
-                        <button class="btn auth-form__controls-back">TRỞ LẠI</button>
-                        <button class="btn btn--primary">ĐĂNG KÝ</button>
-                    </div>
-                </div>
-                
+						<div class="auth-form__switch-wrapper">
+							<span class="auth-form__switch-text">Bạn đã có tài khoản?</span>
+							<span class="auth-form__switch-btn">Đăng nhập</span>
+						</div>
+					</div>
 
-                <div class="auth-form__socials">
-                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
-                        <i class="auth-form__socials-icon fab fa-facebook-square"></i>
-                        <span class="auth-form__socials-title">
-                            Kết nối với Facebook
-                        </span>							
-                    </a>
-                    <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
-                        <i class="auth-form__socials-icon fab fa-google"></i>
-                        <span class="auth-form__socials-title">
-                            Kết nối với Google
-                        </span>		
-                    </a>
-                </div>
-            </form> 
+					<div class="auth-form__controls">
+						<button class="btn auth-form__controls-back">TRỞ LẠI</button>
+						<button class="btn btn--primary">ĐĂNG KÝ</button>
+					</div>
+				</div>
+				
 
-            <!-- Login Form -->
-            <form id="login-form" class="auth-form">
-                <div class="auth-form__container">
-                    <div class="auth-form__header">
-                        <h3 class="auth-form__heading">Đăng nhập</h3>
-                        <span class="auth-form__switch-btn">Đăng ký</span>
-                    </div>
+				<div class="auth-form__socials">
+					<a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+						<i class="auth-form__socials-icon fab fa-facebook-square"></i>
+						<span class="auth-form__socials-title">
+							Kết nối với Facebook
+						</span>							
+					</a>
+					<a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+						<i class="auth-form__socials-icon fab fa-google"></i>
+						<span class="auth-form__socials-title">
+							Kết nối với Google
+						</span>		
+					</a>
+				</div>
+			</form> 
 
-                    <div class="auth-form__groups">
-                        <div class="auth-form__group">
-                            <label for="email" class="auth-form__label">Email</label>
-                            <input id="email" rule="email" type="text" class="auth-form__input" placeholder="Email của bạn" />
-                        </div>
-                        <div class="auth-form__group">
-                            <label for="password" class="auth-form__label">Mật khẩu</label>
-                            <input id="password" rule="password" type="password" class="auth-form__input" placeholder="Mật khẩu của bạn" />
-                        </div>
-                    </div>
-                    
-                    <div class="auth-form__aside">
-                        <div class="auth-form__help">
-                            <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
-                            <span class="auth-form__help-separate"></span>						
-                            <a href="" class="auth-form__help-link">Cần trợ giúp?</a>	
-                        </div>
-                    </div>
+			<!-- Login Form -->
+			<form id="login-form" class="auth-form">
+				<div class="auth-form__container">
+					<div class="auth-form__header">
+						<div class="auth-form__heading">Đăng nhập</div>
+					</div>
 
-                    <div class="auth-form__controls">
-                        <button class="btn auth-form__controls-back">TRỞ LẠI</button>
-                        <button class="btn btn--primary">ĐĂNG NHẬP</button>
-                    </div>
-                </div>
-                
+					<div class="auth-form__groups">
+						<div class="auth-form__group">
+							<input id="email" rule="email" type="text" class="auth-form__input" placeholder="Email của bạn" />
+						</div>
+						<div class="auth-form__group">
+							<input id="password" rule="password" type="password" class="auth-form__input" placeholder="Mật khẩu của bạn" />
+						</div>
+					</div>
+					
+					<div class="auth-form__aside">
+						<div class="auth-form__help">
+							<a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+							<span class="auth-form__help-separate"></span>						
+							<a href="" class="auth-form__help-link">Cần trợ giúp?</a>	
+						</div>
+					</div>
 
-                <div class="auth-form__socials">
-                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
-                        <i class="auth-form__socials-icon fab fa-facebook-square"></i>
-                        <span class="auth-form__socials-title">
-                            Kết nối với Facebook
-                        </span>							
-                    </a>
-                    <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
-                        <i class="auth-form__socials-icon fab fa-google"></i>
-                        <span class="auth-form__socials-title">
-                            Kết nối với Google
-                        </span>		
-                    </a>
-                </div>
-            </form>
-        </div>
-    </div>
+					<div class="auth-form__controls">
+						<button class="btn auth-form__controls-back">TRỞ LẠI</button>
+						<button class="btn btn--primary">ĐĂNG NHẬP</button>
+					</div>
+					
+					<div class="auth-form__switch-wrapper">
+						<span class="auth-form__switch-text">Bạn chưa có tài khoản?</span>
+						<span class="auth-form__switch-btn">Đăng ký</span>
+					</div>
+				</div>
+				
+
+				<div class="auth-form__socials">
+					<a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+						<i class="auth-form__socials-icon fab fa-facebook-square"></i>
+						<span class="auth-form__socials-title">
+							Kết nối với Facebook
+						</span>							
+					</a>
+					<a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+						<i class="auth-form__socials-icon fab fa-google"></i>
+						<span class="auth-form__socials-title">
+							Kết nối với Google
+						</span>		
+					</a>
+				</div>
+			</form>
+		</div>
+	</div>
 </body>
 
-<script src="./Javascript/bugs.js"></script>
+<!-- <script src="./Javascript/index.js"></script> -->
+<script src="./Javascript/product-info.js"></script>
+<script src="./Javascript/general-bugs.js"></script>
+
+<script src="./Javascript/handle-form.js"></script>
 <script src="./Javascript/validator.js"></script>
 <script>
 	Validator('#register-form', '.auth-form__group', 3);
 	Validator('#login-form', '.auth-form__group', 3);
 </script>
-<script src="./Javascript/base.js"></script>
+
 </html>
