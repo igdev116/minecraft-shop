@@ -1,20 +1,18 @@
 // PAGE PRODUCTS
 const pageProducts = [
-    {   
+    {
         id: 0,
         img: 'https://cdn.shopify.com/s/files/1/0251/2155/4510/products/7652p_262c_1x_e931ecde-ec21-47ef-96eb-8424c3913890_800x.jpg?v=1608318433',
         name: '[KHAI TRƯƠNG 149K-219K] Chuỗi Balo, Túi xách Minecraft được giảm giá đặc biệt nhân ngày mở bán',
-        oldPrice: '1.500.000đ',
-        curPrice: '1.200.000đ',
+        oldPrice: '1.500.000',
+        curPrice: '1.200.000',
         sold: 12,
-        brand: 'Minecraft',
-        origin: 'American',
         react: 'Yêu thích',
         per: 23,
         label: 'GIẢM',
         link: 'product-info.html',
         liked: '2,1',
-        rev: 78, 
+        rev: 78,
         oldPriceInfo: '₫220.000 - ₫396.000',
         curPriceInfo: '₫149.000 - ₫219.000',
         available: 1100,
@@ -29,153 +27,131 @@ const pageProducts = [
         from: 'Quận Hoàng Mai, Hà Nội',
         depot: 1099
     },
-    {   
+    {
         id: 0,
         img: 'https://cdn.shopify.com/s/files/1/0251/2155/4510/products/9283p_28c_2x_9cc4830c-d6c2-43f8-b3dd-10fb4081fcd2_800x.jpg?v=1607528622',
         name: 'Bộ ghim cừu Minecraft MINECON Earth 2018',
-        oldPrice: '2.500.000đ',
-        curPrice: '300.000đ',
+        oldPrice: '2.500.000',
+        curPrice: '300.000',
         sold: 33,
-        brand: 'Minecraft',
-        origin: 'American',
         react: 'Yêu thích',
         per: 33,
         label: 'GIẢM',
         link: 'product-info.html'
     },
-    {   
+    {
         id: 0,
         img: 'https://cdn.shopify.com/s/files/1/0251/2155/4510/products/11146p_99c_1x_cd2633cf-fc5d-40b4-8f73-1e7bc1535188_800x.jpg?v=1611763680',
         name: 'Lô gấu bông Minecraft Dungeons Mini',
-        oldPrice: '500.000đ',
-        curPrice: '250.000đ',
+        oldPrice: '500.000',
+        curPrice: '250.000',
         sold: 11,
-        brand: 'Minecraft',
-        origin: 'American',
         react: 'Yêu thích',
         per: 12,
         label: 'GIẢM',
         link: 'product-info.html'
     },
-    {   
+    {
         id: 0,
         img: 'https://cdn.shopify.com/s/files/1/0251/2155/4510/products/8316p_99c_1x_4317c0a9-8c2d-4f38-9a2d-61e03c14001b_800x.jpg?v=1607458896',
         name: 'Trọn bộ Stiker Minecraft Education Edition',
-        oldPrice: '300.000đ',
-        curPrice: '150.000đ',
+        oldPrice: '300.000',
+        curPrice: '150.000',
         sold: 112,
-        brand: 'Minecraft',
-        origin: 'American',
         react: 'Yêu thích',
         per: 71,
         label: 'GIẢM',
         link: 'product-info.html'
     },
-    {   
+    {
         id: 0,
         img: 'https://cdn.shopify.com/s/files/1/0251/2155/4510/products/3942p_21c_1x_3c19c696-c546-4248-814a-042ebdb0df20_800x.jpg?v=1610059305',
         name: 'Áo thun cao cấp tượng Minecraft',
-        oldPrice: '690.000đ',
-        curPrice: '250.000đ',
+        oldPrice: '690.000',
+        curPrice: '250.000',
         sold: 13,
-        brand: 'Minecraft',
-        origin: 'American',
         react: 'Yêu thích',
         per: 61,
         label: 'GIẢM',
         link: 'product-info.html'
-    },{   
+    }, {
         id: 0,
-        img: 'https://cdn.shopify.com/s/files/1/0251/2155/4510/products/7711p_99c_4x_768bb411-b608-4c24-b20a-5bbf6bb9f237_800x.jpg?v=1611172100',
-        name: 'Ly gốm sứ Minecraft Zombie',
-        oldPrice: '570.000đ',
-        curPrice: '350.000đ',
+        img: 'https://cdn.shopify.com/s/files/1/0266/4841/2351/products/MCIC-ENDRFC-100040-11oz-Left-MF_1800x1800.png?v=1612468445',
+        name: 'Ly gốm sứ Minecraft Enderman',
+        oldPrice: '570.000',
+        curPrice: '350.000',
         sold: 13,
-        brand: 'Minecraft',
-        origin: 'American',
         react: 'Yêu thích',
         per: 11,
         label: 'GIẢM',
         link: 'product-info.html'
     },
-    {   
+    {
         id: 0,
         img: 'https://cdn.shopify.com/s/files/1/0251/2155/4510/products/10758p_99c_1x_800c358a-9c22-4488-9565-93668c38053e_800x.jpg?v=1610399275',
         name: 'Móc khóa lợn bám bùn Minecraft Earth',
-        oldPrice: '30.000đ',
-        curPrice: '12.000đ',
+        oldPrice: '30.000',
+        curPrice: '12.000',
         sold: 141,
-        brand: 'Minecraft',
-        origin: 'American',
         react: 'Yêu thích',
         per: 16,
         label: 'GIẢM',
         link: 'product-info.html'
     },
-    {   
+    {
         id: 0,
         img: 'https://cdn.shopify.com/s/files/1/0251/2155/4510/products/9489p_28c_2x_847989c3-a873-4f92-9abd-a39503228363_800x.jpg?v=1610059374',
         name: 'Hộp ăn trưa gia đình Miner',
-        oldPrice: '950.000đ',
-        curPrice: '720.000đ',
+        oldPrice: '950.000',
+        curPrice: '720.000',
         sold: 9,
-        brand: 'Minecraft',
-        origin: 'American',
         react: 'Yêu thích',
         per: 5,
         label: 'GIẢM',
         link: 'product-info.html'
     },
-    {   
+    {
         id: 0,
         img: 'https://cdn.shopify.com/s/files/1/0251/2155/4510/products/6627p_13c_1x_93708f07-c3e6-424d-a218-ebb96fc2dc20_800x.jpg?v=1610059296',
         name: 'Thắt lưng Creeper Minecraft',
-        oldPrice: '350.000đ',
-        curPrice: '129.000đ',
+        oldPrice: '350.000',
+        curPrice: '129.000',
         sold: 2,
-        brand: 'Minecraft',
-        origin: 'American',
         react: 'Yêu thích',
         per: 65,
         label: 'GIẢM',
         link: 'product-info.html'
     },
-    {   
+    {
         id: 0,
         img: 'https://cdn.shopify.com/s/files/1/0251/2155/4510/products/10371p_99c_2x_06035991-bd12-4846-a531-fcfe22c50d62_800x.jpg?v=1610399275',
         name: 'Móc khóa Steve trở về từ địa ngục',
-        oldPrice: '30.000đ',
-        curPrice: '19.000đ',
+        oldPrice: '30.000',
+        curPrice: '19.000',
         sold: 122,
-        brand: 'Minecraft',
-        origin: 'American',
         react: 'Yêu thích',
         per: 70,
         label: 'GIẢM',
         link: 'product-info.html'
     }
-] // save page products info
+]; // save page products info
 
 // handle and render products
 function renderPageProducts() {
     let productElsCtn = document.querySelector('.home-product .row'); // get element of product container
-    let productEls = ''; // save page products 
+    let productEls = ''; // save page product elements
 
     for (let pageProduct of pageProducts) {
-        productEls += 
-        `<div class="col l-2-4 m-4 c-6">
+        productEls +=
+            `<div class="col l-2-4 m-4 c-6">
             <a href="product-info.html" id="${pageProduct.id}" class="home-product-item">
                 <img src=" ${pageProduct.img}" class="home-product-item__img">
                 <div class="home-product-item__name"> ${pageProduct.name} </div>
                 <div class="home-product-item__price">
-                    <span class="home-product-item__price-old"> ${pageProduct.oldPrice} </span>
-                    <span class="home-product-item__price-current"> ${pageProduct.curPrice} </span>
+                    <span class="home-product-item__price-old"> đ${pageProduct.oldPrice} </span>
+                    <span class="home-product-item__price-current"> đ${pageProduct.curPrice} </span>
                 </div>
                 <div class="home-product-item__action">
-                    <span class="home-product-item__like home-product-item__like--liked">
-                        <i class="home-product-item__like-icon-empty far fa-heart"></i>
-                        <i class="home-product-item__like-icon-fill fas fa-heart"></i>
-                    </span>
                     <div class="home-product-item__rating">
                         <i class="home-product-item__star--gold fas fa-star"></i>
                         <i class="home-product-item__star--gold fas fa-star"></i>
@@ -184,10 +160,6 @@ function renderPageProducts() {
                         <i class="fas fa-star"></i>
                     </div>
                     <span class="home-product-item__sold"> ${pageProduct.sold + ' đã bán'} </span>
-                </div>
-                <div class="home-product-item__origin">
-                    <span class="home-product-item__brand"> ${pageProduct.brand} </span>
-                    <span class="home-product-item__origin-name"> ${pageProduct.origin} </span>
                 </div>
                 <div class="product-favourite">
                     <i class="fas fa-check"></i>
@@ -200,7 +172,7 @@ function renderPageProducts() {
             </a>
         </div>`
     }
-    
+
     if (productElsCtn) {
         productElsCtn.innerHTML = productEls;
     }
@@ -275,7 +247,7 @@ function sortProducts() {
             location.reload();
         }
     }
-    
+
     if (sellBtn) {
         sellBtn.onclick = () => {
             removeBgrClass();
@@ -345,7 +317,7 @@ function renderCgrItems() {
             active: false
         }
     ] // save category items info
-    
+
     let cgrElsCtn = document.querySelector('.category-pc .category-list'); // get element of category list
     let cgrEls = ''; // save category items
 
@@ -368,7 +340,7 @@ function renderCgrItems() {
                 </li>`
         }
     }
-    
+
     cgrElsCtn.innerHTML = cgrEls;
 }
 
@@ -378,7 +350,7 @@ renderCgrItems();
 function hoverCategoryItems() {
     let cgrElIdx = -1; // initialize the ordinal numbers of category items
     let actEl = 'category-item--active'; // set active property of item
-    
+
     let cgrPC_Ctn = document.querySelector('.category-pc > .category'); // get element of category container on PC
     let cgrElsCtn = cgrPC_Ctn.querySelector('.category-list'); // get element of category list
     let cgrEls = cgrElsCtn.querySelectorAll('.category-item'); // get element of category items
@@ -394,7 +366,7 @@ function hoverCategoryItems() {
 
     // handle hover
     for (let cgrEl of cgrEls) {
-        cgrEl.onmouseover = () => {                                                                                                                                               
+        cgrEl.onmouseover = () => {
             removeColor();
             cgrEl.classList.add(actEl);
         }
@@ -411,7 +383,7 @@ function hoverCategoryItems() {
     // when hovering out container will reset the original active state
     cgrElsCtn.onmouseleave = () => {
         let cgrActChild = cgrElsCtn.children[cgrElIdx]; // get element of original active item
-        
+
         removeColor();
         cgrActChild.classList.add(actEl);
     }

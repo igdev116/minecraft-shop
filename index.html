@@ -11,6 +11,8 @@
 	<link rel="stylesheet" type="text/css" href="CSS/grid.css" />
 	<link rel="stylesheet" type="text/css" href="CSS/responsive.css" />
 	<link rel="stylesheet" href="fonts/fontawesome-free-5.14.0/css/all.min.css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 	<meta charset="UTF-8">
 </head>
 
@@ -21,9 +23,9 @@
 			<div class="grid wide">
 				<nav class="header__navbar hide-on-mobile-tablet">
 					<ul class="header__navbar-list">
-                        <div class="header__navbar-item header__navbar-item-separate">
-                            Kênh người bán
-                        </div>
+						<div class="header__navbar-item header__navbar-item-separate">
+							Kênh người bán
+						</div>
 
 						<li class="header__navbar-item header__navbar-item-has-qr header__navbar-item-separate">
 							Tải ứng dụng
@@ -32,26 +34,28 @@
 								<img src="./Images/pickaxe.png" alt="QR code" class="header__qr-img" />
 								<div class="header__qr-apps">
 									<a class="header__qr-link">
-										<img src="./Images/google_play.png" alt="Google Play" class="header__qr-dowload-img"></img>
+										<img src="./Images/google_play.png" alt="Google Play"
+											class="header__qr-dowload-img"></img>
 									</a>
 									<a class="header__qr-link">
-										<img src="./Images/app_store.png" alt="App Store" class="header__qr-dowload-img"></img>
-									</a>	
+										<img src="./Images/app_store.png" alt="App Store"
+											class="header__qr-dowload-img"></img>
+									</a>
 								</div>
 							</div>
-                        </li>
-                        
+						</li>
+
 						<li class="header__navbar-item">
 							<span class="header__navbar-title--no-pointer">Kết nối</span>
 							<a href="" class="header__navbar-icon-link">
-								<i class="header__navbar-icon fab fa-facebook"></i>	
+								<i class="header__navbar-icon fab fa-facebook"></i>
 							</a>
 							<a href="" class="header__navbar-icon-link">
-								<i class="header__navbar-icon fab fa-instagram"></i>	
+								<i class="header__navbar-icon fab fa-instagram"></i>
 							</a>
 						</li>
 					</ul>
-				
+
 					<ul class="header__navbar-list">
 						<li class="header__navbar-item header__navbar-item--has-notify">
 							<a class="header__navbar-item-link">
@@ -65,7 +69,8 @@
 								<ul class="header__notify-list">
 									<li class="header__notify-item header__notify-item--viewed">
 										<a href="" class="header__notify-link">
-											<img src="https://cdn.europosters.eu/image/750webp/84830.webp" alt="" class="header__notify-img">
+											<img src="https://cdn.europosters.eu/image/750webp/84830.webp" alt=""
+												class="header__notify-img">
 											<div class="header__notify-info">
 												<span class="header__notify-name">Áo thun Minecraft chính hãng</span>
 												<span class="header__notify-description">Mô tả sản phẩm</span>
@@ -86,35 +91,16 @@
 						</li>
 						<li id="register-item" class="header__navbar-item header__navbar-item-separate">Đăng Ký</li>
 						<li id="login-item" class="header__navbar-item">Đăng Nhập</li>
-						<!-- <li class="header__navbar-item header__navbar-user">
-							<img src="Images/user.png" class="header__navbar-user-img"></img>
-							<span class="header__navbar-user-name">Minh Hưng</span>
-
-							<ul class="header__navbar-user-menu">
-								<li class="header__navbar-user-item">
-									<a href="">Tài khoản của tôi</a>
-								</li>
-								<li class="header__navbar-user-item">
-									<a href="">Địa chỉ của tôi</a>
-								</li>
-								<li class="header__navbar-user-item">
-									<a href="">Đơn mua</a>
-								</li>
-								<li class="header__navbar-user-item header__navbar-user-item--separate">
-									<a href="">Đăng xuất</a>
-								</li>
-							</ul>
-						</li> -->
 					</ul>
 				</nav>
 
 				<input type="checkbox" hidden class="nav__input" id="nav-mobile-input"></input>
 
-                <!-- Nav on mobile -->
+				<!-- Nav on mobile -->
 				<div class="nav__mobile">
 					<ul class="nav__mobile-list">
 						<div class="category__heading">Danh mục</div>
-						<ul class="category-list">				
+						<ul class="category-list">
 							<li class="category-item category-item--active">
 								<a href="" class="category-item__link">Đồ bán chạy hôm nay</a>
 							</li>
@@ -145,8 +131,9 @@
 							<li class="category-item">
 								<a href="" class="category-item__link">Cốc lạc đà Llama</a>
 							</li>
-						</ul>	
+						</ul>
 					</ul>
+
 					<label for="nav-mobile-input" class="nav__mobile-close">
 						<i class="nav__mobile-close--icon fas fa-times"></i>
 					</label>
@@ -157,22 +144,20 @@
 				<!-- Header-with-search -->
 				<div class="header-with-search">
 					<label for="nav-mobile-input" class="mobile__menu-btn">
-						<i class="mobile__menu-icon fas fa-bars"></i>						
-					</label>
-					<label for="mobile-search-checkbox" class="header__mobile-search">
-						<i class="header__mobile-search-icon fas fa-search"></i>
+						<i class="mobile__menu-icon fas fa-ellipsis-v"></i>
 					</label>
 					<input type="checkbox" hidden class="header__search-checkbox" id="mobile-search-checkbox">
 
-					<div class="header__logo hide-on-tablet">
+					<div class="header__logo hide-on-mobile-tablet">
 						<a href="" class="header__logo-link">
 							<img src="Images/logo.png" class="header__logo-img" />
 						</a>
-					</div>										
+					</div>
+
 					<div class="header__search">
 						<div class="header__search-input-wrap">
 							<input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm"></input>
-
+							<i class="header__search-camera fas fa-camera "></i>
 							<!-- Search history -->
 							<div class="header__search-history">
 								<div class="header__search-history-heading">Lịch sử tìm kiếm</div>
@@ -186,14 +171,19 @@
 								</ul>
 							</div>
 						</div>
-	
-						<button class="header__search-btn">
+
+						<button class="header__search-btn hide-on-mobile-tablet">
 							<i class="header__search-btn-icon fas fa-search"></i>
 						</button>
 					</div>
-					
+
+					<button class="header__search-fillter-wrapper clear-btn">
+						<i class="header__search-fillter-icon fas fa-filter"></i>
+						<span class="header__search-fillter-text">Lọc</span>
+					</button>
+
 					<!-- Cart layout -->
-					<div class="header__cart">
+					<div class="header__cart hide-on-mobile-tablet">
 						<div class="header__cart-wrap">
 							<i class="header__cart-icon fas fa-shopping-cart"></i>
 							<span class="header__cart-wrap-notice">1</span>
@@ -210,36 +200,37 @@
 								<ul class="header__cart-list-item">
 									<!-- Cart item -->
 									<li title="Mũ chụp ngược Minecraft Dungeons" class="header__cart-item">
-                                        <div class="header__cart-img-wrapper">
-                                            <img src="https://cdn.shopify.com/s/files/1/0251/2155/4510/products/10961p_99c_1x_4245f004-582b-4a36-a07f-a8cf3468e0ca_800x.jpg?v=1610398977" class="header__cart-img">
-                                        </div>
+										<div class="header__cart-img-wrapper">
+											<img src="https://cdn.shopify.com/s/files/1/0251/2155/4510/products/10961p_99c_1x_4245f004-582b-4a36-a07f-a8cf3468e0ca_800x.jpg?v=1610398977"
+												class="header__cart-img">
+										</div>
 										<div class="header__cart-item-info">
 											<div class="header__cart-item-head">
-												<div class="header__cart-item-name">Mũ chụp ngược Minecraft Dungeons</div>
+												<div class="header__cart-item-name">Mũ chụp ngược Minecraft Dungeons
+												</div>
 												<div class="header__cart-item-price-wrap">
 													<span class="header__cart-item-price">1.990.000đ</span>
 													<span class="header__cart-item-multiply">x</span>
 													<span class="header__cart-item-qnt">1</span>
-												</div>												
+												</div>
 											</div>
 											<div class="header__cart-item-body">
 												<span class="header__cart-item-description">
 													Phân loại: Hàng Quốc tế
 												</span>
-												<span class="header__cart-item-remove">Xóa</span>
 											</div>
-										</div>				
+										</div>
 									</li>
 								</ul>
 
 								<button class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</button>
 							</div>
-						</div>	
+						</div>
 					</div>
-				</div>				
-            </div>
-            
-            <!-- Sort bar on mobile -->
+				</div>
+			</div>
+
+			<!-- Sort bar on mobile -->
 			<ul class="header__sort-bar">
 				<li class="header__sort-item">
 					<a href="" class="header__sort-link">Liên quan</a>
@@ -252,9 +243,9 @@
 				</li>
 				<li class="header__sort-item">
 					<a href="" class="header__sort-link">Giá</a>
-				</li> 
-			</ul>	
-        </header>
+				</li>
+			</ul>
+		</header>
 
 		<div class="app__container">
 			<div class="grid wide">
@@ -266,14 +257,14 @@
 									<i class="category__heading-icon fas fa-th-large"></i>
 									<div class="category__heading">Danh Mục</div>
 								</div>
-								
+
 								<!-- Content category items -->
-								<ul class="category-list">				
-									
+								<ul class="category-list">
+
 								</ul>
 							</nav>
 						</div>
-					</div>	
+					</div>
 
 					<div class="col l-10 m-12 c-12">
 						<div class="home-filter hide-on-mobile-tablet">
@@ -289,27 +280,12 @@
 								<!-- List option -->
 								<ul class="select-input__list">
 									<li class="select-input__item">
-										Giá: Thấp đến cao	
+										Giá: Thấp đến cao
 									</li>
 									<li class="select-input__item">
 										Giá: Cao đến thấp
 									</li>
-								</ul>		
-							</div>
-
-							<div class="home-filter__page">
-								<span class="home-filter__page-num">
-									<span class="home-filter__page-current">1</span>/14	
-								</span>
-
-								<div class="home-filter__page-control">
-									<a href="" class="home-filter__page-btn home-filter__page-btn-disabled">
-										<i class="home-filter__page-icon fas fa-angle-left"></i>
-									</a>
-									<a href="" class="home-filter__page-btn">
-										<i class="home-filter__page-icon fas fa-angle-right"></i>
-									</a>
-								</div>
+								</ul>
 							</div>
 						</div>
 
@@ -349,47 +325,12 @@
 						<div class="home-product">
 							<div class="row sm-gutter">
 								<!-- Product item -->
-							 	
+
 							</div>
 						</div>
-
-						<ul class="pagination home-product__pagination">
-							<li class="pagination-item">
-								<a href="" class="pagination-item__link">
-									<i class="pagination-item__icon fas fa-angle-left"></i>
-								</a>
-							</li>
-							<li class="pagination-item pagination-item--active">
-								<a href="" class="pagination-item__link">1</a>
-							</li>
-							<li class="pagination-item">
-								<a href="" class="pagination-item__link">2</a>
-							</li>
-							<li class="pagination-item">
-								<a href="" class="pagination-item__link">3</a>
-							</li>
-							<li class="pagination-item">
-								<a href="" class="pagination-item__link">4</a>
-							</li>
-							<li class="pagination-item">
-								<a href="" class="pagination-item__link">5</a>
-							</li>
-							<li class="pagination-item">
-								<a href="" class="pagination-item__link">...</a>
-							</li>
-							<li class="pagination-item">
-								<a href="" class="pagination-item__link">14</a>
-							</li>
-
-							<li class="pagination-item">
-								<a href="" class="pagination-item__link">
-									<i class="pagination-item__icon fas fa-angle-right"></i>
-								</a>
-							</li>
-						</ul>
-					</div>	
+					</div>
 				</div>
-			</div>	
+			</div>
 		</div>
 
 		<footer class="footer">
@@ -400,7 +341,7 @@
 						<ul class="footer-list">
 							<li class="footer-item">
 								<a href="" class="footer-item__link">Trung tâm trợ giúp</a>
-				 			</li>
+							</li>
 							<li class="footer-item">
 								<a href="" class="footer-item__link">Minecraft-Shop</a>
 							</li>
@@ -435,8 +376,8 @@
 							<li class="footer-item">
 								<a href="" class="footer-item__link">Gấu bông</a>
 							</li>
-						</ul>	
-					</div>		
+						</ul>
+					</div>
 					<div class="col l-2-4 m-4 c-6">
 						<div class="footer__heading">Theo dõi chúng tôi</div>
 						<ul class="footer-list">
@@ -455,7 +396,7 @@
 							<li class="footer-item">
 								<a href="" class="footer-item__link">
 									<i class="footer-item__icon fab fa-twitter-square"></i>
-									Twitter	
+									Twitter
 								</a>
 							</li>
 						</ul>
@@ -466,15 +407,17 @@
 							<img src="Images/pickaxe.png" alt="Download QR" class="footer__download-qr"></img>
 							<div class="footer__download-apps">
 								<a href="" class="footer__download-app-link">
-									<img src="Images/google_play.png" alt="Google play" class="footer__download-app-img"></img>
+									<img src="Images/google_play.png" alt="Google play"
+										class="footer__download-app-img"></img>
 								</a>
 								<a href="" class="footer__download-app-link">
-									<img src="Images/app_store.png" alt="App store" class="footer__download-app-img"></img>
-								</a>										
+									<img src="Images/app_store.png" alt="App store"
+										class="footer__download-app-img"></img>
+								</a>
 							</div>
 						</div>
 					</div>
-				</div>				
+				</div>
 			</div>
 
 			<div class="footer__bottom">
@@ -491,7 +434,7 @@
 
 		<div class="modal__body">
 			<!-- Register Form -->
-		    <form id="register-form" class="auth-form">
+			<form id="register-form" class="auth-form">
 				<div class="auth-form__container">
 					<div class="auth-form__header">
 						<div class="auth-form__heading">Đăng ký</div>
@@ -499,16 +442,20 @@
 
 					<div class="auth-form__groups">
 						<div class="auth-form__group">
-							<input id="email" rule="email" type="text" class="auth-form__input" placeholder="Email của bạn" />
+							<input id="email" rule="email" type="text" class="auth-form__input"
+								placeholder="Email của bạn" />
 						</div>
 						<div class="auth-form__group">
-							<input id="password" rule="password" type="password" class="auth-form__input" placeholder="Mật khẩu của bạn" />
+							<input id="password" rule="password" type="password" class="auth-form__input"
+								placeholder="Mật khẩu của bạn" />
 						</div>
 						<div class="auth-form__group">
-							<input id="password_confirmation" rule="password_confirmation" type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu của bạn" /><span class="auth-form__message"></span>
+							<input id="password_confirmation" rule="password_confirmation" type="password"
+								class="auth-form__input" placeholder="Nhập lại mật khẩu của bạn" /><span
+								class="auth-form__message"></span>
 						</div>
 					</div>
-					
+
 					<div class="auth-form__aside">
 						<p class="auth-form__policy-text">
 							Bằng việc đăng ký, bạn đã đồng ý với Minecraft Shop
@@ -527,23 +474,23 @@
 						<button class="btn btn--primary">ĐĂNG KÝ</button>
 					</div>
 				</div>
-				
+
 
 				<div class="auth-form__socials">
 					<a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
 						<i class="auth-form__socials-icon fab fa-facebook-square"></i>
 						<span class="auth-form__socials-title">
 							Kết nối với Facebook
-						</span>							
+						</span>
 					</a>
 					<a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
 						<i class="auth-form__socials-icon fab fa-google"></i>
 						<span class="auth-form__socials-title">
 							Kết nối với Google
-						</span>		
+						</span>
 					</a>
 				</div>
-			</form> 
+			</form>
 
 			<!-- Login Form -->
 			<form id="login-form" class="auth-form">
@@ -554,18 +501,20 @@
 
 					<div class="auth-form__groups">
 						<div class="auth-form__group">
-							<input id="email" rule="email" type="text" class="auth-form__input" placeholder="Email của bạn" />
+							<input id="email" rule="email" type="text" class="auth-form__input"
+								placeholder="Email của bạn" />
 						</div>
 						<div class="auth-form__group">
-							<input id="password" rule="password" type="password" class="auth-form__input" placeholder="Mật khẩu của bạn" />
+							<input id="password" rule="password" type="password" class="auth-form__input"
+								placeholder="Mật khẩu của bạn" />
 						</div>
 					</div>
-					
+
 					<div class="auth-form__aside">
 						<div class="auth-form__help">
 							<a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
-							<span class="auth-form__help-separate"></span>						
-							<a href="" class="auth-form__help-link">Cần trợ giúp?</a>	
+							<span class="auth-form__help-separate"></span>
+							<a href="" class="auth-form__help-link">Cần trợ giúp?</a>
 						</div>
 					</div>
 
@@ -573,33 +522,33 @@
 						<button class="btn auth-form__controls-back">TRỞ LẠI</button>
 						<button class="btn btn--primary">ĐĂNG NHẬP</button>
 					</div>
-					
+
 					<div class="auth-form__switch-wrapper">
 						<span class="auth-form__switch-text">Bạn chưa có tài khoản?</span>
 						<span class="auth-form__switch-btn">Đăng ký</span>
 					</div>
 				</div>
-				
+
 
 				<div class="auth-form__socials">
 					<a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
 						<i class="auth-form__socials-icon fab fa-facebook-square"></i>
 						<span class="auth-form__socials-title">
 							Kết nối với Facebook
-						</span>							
+						</span>
 					</a>
 					<a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
 						<i class="auth-form__socials-icon fab fa-google"></i>
 						<span class="auth-form__socials-title">
 							Kết nối với Google
-						</span>		
+						</span>
 					</a>
 				</div>
 			</form>
 		</div>
 	</div>
 </body>
-	
+
 <script src="./Javascript/index.js"></script>
 <script src="./Javascript/general-bugs.js"></script>
 

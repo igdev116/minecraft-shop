@@ -6,57 +6,18 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="CSS/base.css" />
     <link rel="stylesheet" type="text/css" href="CSS/main.css" />
-    <link rel="stylesheet" type="text/css" href="CSS/grid.css" />
     <link rel="stylesheet" type="text/css" href="CSS/responsive.css" />
-    <link rel="stylesheet" type="text/css" href="CSS/product.css" />
     <link rel="stylesheet" type="text/css" href="CSS/product-info.css" />
     <link rel="stylesheet" type="text/css" href="CSS/product-cart.css" />
     <link rel="stylesheet" href="fonts/fontawesome-free-5.14.0/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/grid.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="app">
         <!-- Cart navbar -->
-        <!-- <nav class="cart-navbar-container">
-            <div class="grid wide cart-navbar">
-                <div class="cart-navbar__links">
-                    <a href="#" class="cart-navbar__link cart-navbar__link--separate">
-                        <span>Kênh người bán</span>
-                    </a>
-    
-                    <a href="#" class="cart-navbar__link cart-navbar__link--separate">
-                        <span>Tải ứng dụng</span>
-                    </a>
-                    
-                    <div href="#" class="cart-navbar__link-container">
-                        <span>Kết nối</span>
-                        <a href="#" class="cart-navbar__link">
-                            <i class="cart-navbar__link-icon fab fa-facebook"></i>	
-                        </a>
-        
-                        <a href="#" class="cart-navbar__link">
-                            <i class="cart-navbar__link-icon fab fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
-        
-                <div class="cart-navbar__links">
-                    <a href="#" class="cart-navbar__link">
-                        <i class="cart-navbar__link-icon far fa-bell"></i>
-                        <span>Thông báo</span>
-                    </a>
-        
-                    <a href="#" class="cart-navbar__link">
-                        <i class="cart-navbar__link-icon far fa-question-circle"></i>
-                        <span>Trợ giúp</span>
-                    </a>
-        
-                    <a href="#" class="cart-navbar__link-user">
-                        <img src="./Images/user.png" class="cart-navbar__link-icon-avatar">
-                        <div class="cart-navbar__link-name">minhhung1106</div>
-                    </a>
-                </div>
-            </div>
-        </nav> -->
         <div class="cart-navbar-container">
             <div class="grid wide">
                 <nav class="header__navbar hide-on-mobile-tablet">
@@ -150,7 +111,7 @@
         </div>
 
         <!-- Cart banner with search -->
-        <div class="cart-banner-container">
+        <div class="cart-banner-container hide-on-mobile-tablet">
             <div class="grid wide">
                 <div class="cart-banner">
                     <a href="#" class="cart-banner__logo">
@@ -176,12 +137,11 @@
             </div>
 
             <!-- Cart product header -->
-            <div class="cart-page-product-header">
-                <div class="cart-checkbox">
-                    <input class="cart-checkbox__input" type="checkbox">
-                    <div class="cart-checkbox__bgc"></div>
-                </div>
-                <span class="cart-page-product-header__product">Sản Phẩm</span>
+            <div class="cart-page-product-header hide-on-mobile-tablet">
+                <span class="cart-page-product-header__product">
+                    <i class="fas fa-cart-arrow-down"></i>
+                    Sản Phẩm
+                </span>
                 <span class="cart-page-product-header__unit-price">Đơn Giá</span>
                 <span class="cart-page-product-header__qnt">Số Lượng</span>
                 <span class="cart-page-product-header__total-price">Số Tiền</span>
@@ -191,9 +151,9 @@
             <!-- Cart shop content-->
             <div class="cart-page-shop-container">
                 <div class="cart-page-shop__header">
-                    <div class="cart-checkbox">
-                        <input class="cart-checkbox__input" type="checkbox">
-                        <div class="cart-checkbox__bgc"></div>
+                    <div class="shop-checkbox shop-checkbox-sup">
+                        <input class="shop-checkbox__input" type="checkbox">
+                        <div class="shop-checkbox__bgc"></div>
                     </div>
                     <div class="label-loving">Yêu Thích</div>
                     <span class="cart-page-shop__header-name">toykids</span>
@@ -204,14 +164,11 @@
                 
                 <div class="cart-page-shop__container-items">
                     <div class="cart-bundle">   
-                        <div class="cart-bundle__header">
+                        <div class="cart-bundle__header hide-on-mobile">
                             <div class="cart-bundle-header__logo-wrapper">
-                                <div class="cart-bundle-header__logo-bgc">Combo khuyến mãi</div>
-                                <div class="cart-bundle-header__logo-triangle"></div>
-                                <div class="cart-bundle-header__logo-hide-left"></div>
-                                <div class="cart-bundle-header__logo-hide-right"></div>
+                                <i class="far fa-thumbs-up"></i>
+                                <div class="cart-bundle-header__logo">Combo khuyến mãi</div>
                             </div>
-
                             <span class="cart-bundle-header__hint">Mua thêm 1 sản phẩm</span>
                             <span class="cart-bundle-header__saving">(để giảm 5%)</span>
                             <a href="#" class="cart-bundle-header__more">
@@ -220,58 +177,17 @@
                             </a>
                         </div>
                         
-                        <div class="cart-item">
-                            <div class="cart-checkbox">
-                                <input class="cart-checkbox__input" type="checkbox">
-                                <div class="cart-checkbox__bgc"></div>
-                            </div>
+                        <div class="cart-item-container">
+                            
+                        </div>
 
-                            <div class="cart-item__overview">
-                                <a href="#" class="cart-item__overview-img-link">
-                                    <img class="cart-item__overview-img" src="https://cdn.shopify.com/s/files/1/0251/2155/4510/products/7652p_262c_1x_e931ecde-ec21-47ef-96eb-8424c3913890_800x.jpg?v=1608318433">
-                                </a>
-                                <a href="#" class="cart-item__overview-name">[KHAI TRƯƠNG 149K-219K] Chuỗi Balo, Túi xách Minecraft được giảm giá đặc biệt nhân ngày mở bán</a>
-                            </div>
+                        <div class="cart-item-container-mobile">
 
-                            <div class="cart-item__variations">
-                                <div class="cart-item__variation-label">
-                                    Phân loại hàng:
-                                    <button class="cart-item__variation-btn-arrow">
-                                        <i class="cart-item__variation-icon-arrow-down fas fa-sort-down"></i>
-                                    </button>
-                                </div>
-                                <div class="cart-item__variation-model">Hang động</div>
-                            </div>
-
-                            <div class="cart-item__price">
-                                <div class="cart-item__price-old">₫396.000</div>
-                                <div class="cart-item__price-current">₫219.000</div>
-                            </div>
-
-                            <div class="shop__qnt-btns">
-                                <button class="shop__qnt-btn shop__qnt-btn--dec">
-                                    <i class="shop__qnt-btn-icon fas fa-minus"></i>
-                                </button>
-                                <input class="shop__qnt-input" type="text" value="1"></input>
-                                <button class="shop__qnt-btn shop__qnt-btn--inc">
-                                    <i class="shop__qnt-btn-icon fas fa-plus"></i>
-                                </button>
-                            </div>
-
-                            <div class="cart-item__price-total">₫219.000</div>
-
-                            <div class="cart-item__actions">
-                                <button class="cart-item__action-remove">Xóa</button>
-                                <button class="cart-item__action-search">
-                                    <span class="cart-item__action-search-title">Tìm sản phẩm tương tự</span>
-                                    <i class="cart-item__action-search-icon fas fa-sort-down"></i>
-                                </button>
-                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="cart-voucher">
+                <div class="cart-voucher hide-on-mobile">
                     <i class="cart-voucher__icon fas fa-archive"></i>
                     <div class="cart-voucher__message">Lưu voucher giảm ₫8k</div>
                     <button class="cart-voucher__btn-save">Lưu</button>
@@ -280,7 +196,7 @@
                 <div class="cart-shipping">
                     <i class="cart-shipping__icon fas fa-shipping-fast"></i>
                     <div class="cart-shipping__message">Miễn Phí Vận Chuyển cho đơn hàng từ ₫50.000 (giảm tối đa ₫20.000); Miễn Phí Vận Chuyển cho đơn hàng từ ₫300.000 (giảm tối đa ₫70.000)</div>
-                    <div class="cart-shipping__learn-more">Tìm hiểu thêm</div>
+                    <div class="cart-shipping__learn-more hide-on-mobile-tablet">Tìm hiểu thêm</div>
                 </div>
             </div>
 
@@ -289,198 +205,127 @@
                 <div class="cart-page-footer__row1">
                     <div class="cart-page-footer__voucher">
                         <i class="cart-page-footer__voucher-icon fas fa-box-tissue"></i>
-                        <div class="cart-page-footer__voucher-name">Minecraft Shop Voucher</div>
+                        <div class="cart-page-footer__voucher-name">Shop Voucher</div>
                     </div>
                     <div class="cart-page-footer__option">Chọn hoặc nhập mã</div>
                 </div>
 
                 <div class="cart-page-footer__row2">
-                    <div class="cart-page-footer__checkbox">
-                        <div class="cart-checkbox cart-checkbox--disabled">
-                            <input class="cart-checkbox__input" type="checkbox">
-                            <div class="cart-checkbox__bgc"></div>
+                    <div class="cart-page-footer__checkbox hide-on-mobile">
+                        <div class="shop-checkbox shop-checkbox--disabled">
+                            <input class="shop-checkbox__input" type="checkbox">
+                            <div class="shop-checkbox__bgc"></div>
                         </div>
                     </div>
 
-                    <div class="cart-page-footer__title">
+                    <div class="cart-page-footer__title disabled">
                         <i class="cart-page-footer__title-icon-label blur-item fas fa-donate"></i>
-                        <div class="cart-page-footer__title-name blur-item">Minecraft Xu</div>
+                        <div class="cart-page-footer__title-name blur-item hide-on-mobile">Minecraft Xu</div>
                         <div class="cart-page-footer__title-message">Bạn chưa có Minecraft Xu</div>
                         <i class="cart-page-footer__title-icon-question far fa-question-circle"></i>
                     </div>
-                    <div class="cart-page-footer__value">-₫0</div>
+                    <div class="cart-page-footer__value hide-on-mobile">-₫0</div>
                 </div>
                 
-                <div class="cart-page-footer__row3">
+                <!-- <div class="cart-page-footer__row3">
                     <div class="cart-page-footer__actions">
-                        <div class="cart-checkbox">
-                            <input class="cart-checkbox__input" type="checkbox">
-                            <div class="cart-checkbox__bgc"></div>
+                        <div id="shop-checkbox-all" class="shop-checkbox">
+                            <input class="shop-checkbox__input" type="checkbox">
+                            <div class="shop-checkbox__bgc"></div>
                         </div>
-                        <button class="cart-page-footer__actions-btn cart-page-footer__select-all clear-btn">Chọn tất cả (2)</button>
+                        <button class="cart-page-footer__actions-btn cart-page-footer__select-all clear-btn">Chọn tất cả (<span class="qnt">0</span>)</button>
                         <button class="cart-page-footer__actions-btn cart-page-footer__remove clear-btn">Xóa</button>
                         <button class="cart-page-footer__actions-btn cart-page-footer__save clear-btn">Lưu vào mục Đã thích</button>
                     </div>
 
                     <div class="cart-page-footer__summary">
                         <div class="cart-page-footer__summary-total">
-                            <div class="cart-page-footer__summary-total-text">Tổng tiền hàng (0 sản phẩm):</div>
+                            <div class="cart-page-footer__summary-total-text">Tổng tiền hàng (<span class="qnt">0</span> sản phẩm):</div>
                             <div class="cart-page-footer__summary-total-amount">₫0</div>
                         </div>
                         <div class="cart-page-footer__summary-bonus">Nhận thêm: 0 Xu</div>
                     </div>
 
                     <button class="cart-page-footer__checkout clear-btn">Mua Hàng</button>
+                </div> -->
+                <div class="cart-page-footer__row3">
+                    <div class="cart-page-footer__actions">
+                        <div id="shop-checkbox-all" class="shop-checkbox">
+                            <input class="shop-checkbox__input" type="checkbox">
+                            <div class="shop-checkbox__bgc"></div>
+                        </div>
+                        <button class="cart-page-footer__actions-btn cart-page-footer__select-all clear-btn">Tất cả
+                            <span class="hide-on-mobile-tablet">
+                                (<span class="qnt">0</span>)
+                            </span>
+                        </button>
+                        <button class="cart-page-footer__actions-btn cart-page-footer__remove clear-btn hide-on-mobile-tablet">Xóa</button>
+                        <button class="cart-page-footer__actions-btn cart-page-footer__save clear-btn hide-on-mobile-tablet">Lưu vào mục Đã thích</button>
+                    </div>
+
+                    <div class="cart-page-footer__summary">
+                        <div class="cart-page-footer__summary-total">
+                            <div class="cart-page-footer__summary-total-text">Tổng tiền
+                                <span class="hide-on-mobile-tablet">(<span class="qnt">0</span> sản phẩm):</span>
+                            </div>
+                            <div class="cart-page-footer__summary-total-amount">₫0</div>
+                        </div>
+                        <div class="cart-page-footer__summary-bonus">Nhận 0 Xu</div>
+                    </div>
+
+                    <button class="cart-page-footer__checkout clear-btn">Mua hàng</button>
                 </div>
             </div>
 
+            <!-- Confirm deletion -->
+            <div class="confirm-deletion-container">
+                <div class="confirm-deletion-overlay"></div>
+                <div class="confirm-deletion">
+                    <div class="confirm-deletion__message">
+                        Bạn có muốn xóa <span class="qnt">0</span> sản phẩm?
+                    </div>
+                    <div class="confirm-deletion__btn-wrapper">
+                        <button class="confirm-deletion__btn confirm-deletion__btn--back clear-btn">Trở lại</button>
+                        <button class="confirm-deletion__btn confirm-deletion__btn--agree clear-btn">Có</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Empty cart -->
+            <div class="empty-cart">
+                <div class="empty-cart__img"></div>
+                <div class="empty-cart__msg">Giỏ hàng của bạn còn trống</div>
+                <a href="index.html" class="empty-cart__link">
+                    <button class="empty-cart__link-btn clear-btn">MUA NGAY</button>
+                </a>
+            </div>
+
             <!-- Cart carousel -->
-            <div class="cart-page-carousel-container">
-                <div class="cart-page-carousel__title">CÓ THỂ BẠN CŨNG THÍCH</div>
+            <div class="cart-page-carousel">
+                <div class="cart-page-line"></div>
                 <div class="cart-page-carousel__items">
-                    <button class="cart-page-carousel__items-btn cart-page-carousel__items-btn--left clear-btn">
+                <div class="cart-page-carousel__title">Có thể bạn cũng thích</div>
+                    <button class="cart-page-carousel__items-btn cart-page-carousel__items-btn--prev clear-btn">
                         <i class="fas fa-chevron-left"></i>
                     </button>
-                    <button class="cart-page-carousel__items-btn cart-page-carousel__items-btn--right clear-btn">
+                    <button class="cart-page-carousel__items-btn cart-page-carousel__items-btn--next clear-btn">
                         <i class="fas fa-chevron-right"></i>
                     </button>
-                    <div class="cart-page-carousel__item-wrapper">
-                        <a href="#" class="cart-page-carousel__item">
-                            <div class="cart-page-carousel__item-img-wrapper">
-                                <img class="cart-page-carousel__item-img" src="https://cdn.shopify.com/s/files/1/0251/2155/4510/products/7652p_262c_2x_6fd3fe79-79c8-4092-84b3-34ebbce9a769_800x.jpg?v=1608318433">
-                            </div>
-    
-                            <div class="product-favourite">Yêu thích</div>
-    
-                            <div class="product-sale-off">
-                                <span class="product-sale-off__percent">33%</span>
-                                <span class="product-sale-off__label">GIẢM</span>
-                            </div>
-    
-                            <div class="cart-page-carousel__item-container">
-                                <div class="cart-page-carousel__item-name">[KHAI TRƯƠNG 149K-219K] Chuỗi Balo, Túi xách Minecraft được giảm giá đặc biệt nhân ngày mở bán</div>
-                                <div class="cart-page-carousel__item-bottom">
-                                    <div class="cart-page-carousel__item-price">₫310.000</div>
-                                    <div class="cart-page-carousel__item-sold">Đã bán 15</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="cart-page-carousel__item-wrapper">
-                        <a href="#" class="cart-page-carousel__item">
-                            <div class="cart-page-carousel__item-img-wrapper">
-                                <img class="cart-page-carousel__item-img" src="https://cdn.shopify.com/s/files/1/0251/2155/4510/products/9283p_28c_2x_9cc4830c-d6c2-43f8-b3dd-10fb4081fcd2_800x.jpg?v=1607528622">
-                            </div>
-    
-                            <div class="product-favourite">Yêu thích</div>
-    
-                            <div class="product-sale-off">
-                                <span class="product-sale-off__percent">21%</span>
-                                <span class="product-sale-off__label">GIẢM</span>
-                            </div>
-    
-                            <div class="cart-page-carousel__item-container">
-                                <div class="cart-page-carousel__item-name">Bộ ghim cừu Minecraft MINECON Earth 2018</div>
-                                <div class="cart-page-carousel__item-bottom">
-                                    <div class="cart-page-carousel__item-price">₫10.000</div>
-                                    <div class="cart-page-carousel__item-sold">Đã bán 16</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="cart-page-carousel__item-wrapper">
-                        <a href="#" class="cart-page-carousel__item">
-                            <div class="cart-page-carousel__item-img-wrapper">
-                                <img class="cart-page-carousel__item-img" src="https://cdn.shopify.com/s/files/1/0251/2155/4510/products/8316p_99c_1x_4317c0a9-8c2d-4f38-9a2d-61e03c14001b_800x.jpg?v=1607458896">
-                            </div>
-    
-                            <div class="product-favourite">Yêu thích</div>
-    
-                            <div class="product-sale-off">
-                                <span class="product-sale-off__percent">11%</span>
-                                <span class="product-sale-off__label">GIẢM</span>
-                            </div>
-    
-                            <div class="cart-page-carousel__item-container">
-                                <div class="cart-page-carousel__item-name">Trọn bộ Stiker Minecraft Education Edition</div>
-                                <div class="cart-page-carousel__item-bottom">
-                                    <div class="cart-page-carousel__item-price">₫5.900</div>
-                                    <div class="cart-page-carousel__item-sold">Đã bán 156</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="cart-page-carousel__item-wrapper">
-                        <a href="#" class="cart-page-carousel__item">
-                            <div class="cart-page-carousel__item-img-wrapper">
-                                <img class="cart-page-carousel__item-img" src="https://cdn.shopify.com/s/files/1/0251/2155/4510/products/7711p_99c_4x_768bb411-b608-4c24-b20a-5bbf6bb9f237_800x.jpg?v=1611172100">
-                            </div>
-    
-                            <div class="product-favourite">Yêu thích</div>
-    
-                            <div class="product-sale-off">
-                                <span class="product-sale-off__percent">65%</span>
-                                <span class="product-sale-off__label">GIẢM</span>
-                            </div>
-    
-                            <div class="cart-page-carousel__item-container">
-                                <div class="cart-page-carousel__item-name">Ly gốm sứ Minecraft Zombie</div>
-                                <div class="cart-page-carousel__item-bottom">
-                                    <div class="cart-page-carousel__item-price">₫190.000</div>
-                                    <div class="cart-page-carousel__item-sold">Đã bán 23</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="cart-page-carousel__item-wrapper">
-                        <a href="#" class="cart-page-carousel__item">
-                            <div class="cart-page-carousel__item-img-wrapper">
-                                <img class="cart-page-carousel__item-img" src="https://cdn.shopify.com/s/files/1/0251/2155/4510/products/10758p_99c_1x_800c358a-9c22-4488-9565-93668c38053e_800x.jpg?v=1610399275">
-                            </div>
-    
-                            <div class="product-favourite">Yêu thích</div>
-    
-                            <div class="product-sale-off">
-                                <span class="product-sale-off__percent">3%</span>
-                                <span class="product-sale-off__label">GIẢM</span>
-                            </div>
-    
-                            <div class="cart-page-carousel__item-container">
-                                <div class="cart-page-carousel__item-name">Móc khóa lợn bám bùn Minecraft Earth</div>
-                                <div class="cart-page-carousel__item-bottom">
-                                    <div class="cart-page-carousel__item-price">₫9.900</div>
-                                    <div class="cart-page-carousel__item-sold">Đã bán 6</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="cart-page-carousel__item-wrapper">
-                        <a href="#" class="cart-page-carousel__item">
-                            <div class="cart-page-carousel__item-img-wrapper">
-                                <img class="cart-page-carousel__item-img" src="https://cdn.shopify.com/s/files/1/0251/2155/4510/products/9489p_28c_2x_847989c3-a873-4f92-9abd-a39503228363_800x.jpg?v=1610059374">
-                            </div>
-    
-                            <div class="product-favourite">Yêu thích</div>
-    
-                            <div class="product-sale-off">
-                                <span class="product-sale-off__percent">63%</span>
-                                <span class="product-sale-off__label">GIẢM</span>
-                            </div>
-    
-                            <div class="cart-page-carousel__item-container">
-                                <div class="cart-page-carousel__item-name">Hộp ăn trưa gia đình Miner</div>
-                                <div class="cart-page-carousel__item-bottom">
-                                    <div class="cart-page-carousel__item-price">₫210.000</div>
-                                    <div class="cart-page-carousel__item-sold">Đã bán 6</div>
-                                </div>
-                            </div>
-                        </a>
+                    <div class="cart-page-carousel-hidden">
+                        <div class="cart-page-carousel-container">
+                            
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <footer class="footer">
+        <!-- Toast message -->
+        <div class="toast-msg-container">
+            
+        </div>
+
+        <footer class="footer footer-cart">
 			<div class="grid wide footer__content">
 				<div class="row">
 					<div class="col l-2-4 m-4 c-6">
@@ -574,6 +419,8 @@
     </div>
 </body>
 
+<script src="./Javascript/shop-libraries.js"></script>
 <script src="./Javascript/general-bugs.js"></script>
+<script src="./Javascript/product-cart.js" async></script>
 
 </html>
