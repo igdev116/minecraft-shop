@@ -362,6 +362,10 @@ button {
   line-height: 1.5rem;
 }
 
+.footer {
+  height: 500px;
+}
+
 .header__notify-footer {
   display: flex;
 }
