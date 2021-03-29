@@ -713,7 +713,7 @@
 		white-space: nowrap;
 	}
 	.footer {
-		height: 500px;
+		/* height: 500px; */
 	}
 	.footer-info {
 		/* margin-bottom: 20px; */
