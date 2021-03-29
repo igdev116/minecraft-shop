@@ -713,7 +713,7 @@
 		white-space: nowrap;
 	}
 	.footer__content .c-12 {
-		display: none;
+		/* display: none; */
 	}
 	.footer {
 		/* height: 500px; */
@@ -732,6 +732,9 @@
 	}
 	.product-info-container ~ .footer {
 		margin-bottom: 130px;
+	}
+	.footer__download {
+		max-height: 343px;
 	}
 }
 
