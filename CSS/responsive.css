@@ -712,6 +712,9 @@
 		text-overflow: ellipsis;
 		white-space: nowrap;
 	}
+	.footer__content .c-12 {
+		display: none;
+	}
 	.footer {
 		/* height: 500px; */
 	}
