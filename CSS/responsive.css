@@ -735,6 +735,7 @@
 	}
 	.footer__download {
 		max-height: 343px;
+		margin: 0;
 	}
 }
 
