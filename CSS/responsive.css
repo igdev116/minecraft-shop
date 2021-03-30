@@ -740,6 +740,9 @@
 		max-height: 343px;
 		margin: 0;
 	}
+	.footer__heading {
+		display: none;
+	}
 }
 
 /* Tablet*/
