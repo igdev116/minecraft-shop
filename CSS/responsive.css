@@ -609,6 +609,9 @@
 	}
 	.cart-page-footer__select-all {
 		font-size: 0.875rem;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
 	}
 	.cart-page-footer__summary {
 		min-width: unset;
