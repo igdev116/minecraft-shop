@@ -1465,8 +1465,8 @@ i.home-product-item__like-icon-fill {
 
 .footer__download-qr {
   /* margin-top: 8px; */
-  max-width: 200px;
-  max-height: 200px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
 }
 
