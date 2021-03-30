@@ -724,6 +724,12 @@
 	.footer__download {
 		max-height: 343px;
 	}
+	.footer-info {
+		padding-bottom: 65px;
+	}
+	.footer-cart {
+		padding-bottom: 95px;
+	}
 }
 
 /* Tablet*/
