@@ -651,9 +651,6 @@
 	#shop-checkbox-all {
 		margin: 0 0 0 10px ;
 	}
-	.cart-page-footer {
-		margin-top: 0;
-	}
 	.cart-page-footer__voucher-name {
 		font-size: 0.875rem;
 	}
@@ -715,15 +712,6 @@
 		text-overflow: ellipsis;
 		white-space: nowrap;
 	}
-	.footer__content .c-6{
-		display: none;
-	}
-	.footer__content .c-12 {
-		/* display: none; */
-	}
-	.footer {
-		height: 500px;
-	}
 	.footer-info {
 		/* margin-bottom: 20px; */
 	}
@@ -735,13 +723,6 @@
 	}
 	.product-info-container ~ .footer {
 		margin-bottom: 130px;
-	}
-	.footer__download {
-		max-height: 343px;
-		margin: 0;
-	}
-	.footer__heading {
-		display: none;
 	}
 }
 
@@ -1093,7 +1074,7 @@
 		-ms-transform: translateY(10px);
 		-o-transform: translateY(10px);
 	}
-	.footer__content {
+	/* .footer__content {
 		padding: 0 17px;
 	}
 	.footer__heading {
@@ -1106,5 +1087,5 @@
 	.footer__download-app-link {
 		display: block;
 		padding: 6px 8px;
-	}
+	} */
 }
