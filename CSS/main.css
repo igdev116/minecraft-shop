@@ -17,10 +17,6 @@ input[type="checkbox"] {
   margin: 0;
 }
 
-img {
-  box-sizing: border-box; 
-}
-
 input {
   outline: 0;
 }
