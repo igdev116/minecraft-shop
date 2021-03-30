@@ -715,7 +715,7 @@
 	.footer-info {
 		/* margin-bottom: 20px; */
 	}
-	.footer * {
+	/* .footer * {
 		font-size: 0.78rem;
 	}
 	.footer__bottom {
@@ -723,7 +723,7 @@
 	}
 	.product-info-container ~ .footer {
 		margin-bottom: 130px;
-	}
+	} */
 }
 
 /* Tablet*/
