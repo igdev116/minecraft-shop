@@ -712,13 +712,7 @@
 		text-overflow: ellipsis;
 		white-space: nowrap;
 	}
-	.footer .c-6 {
-		display: none;
-	}
-	.footer-info {
-		/* margin-bottom: 20px; */
-	}
-	/* .footer * {
+	.footer * {
 		font-size: 0.78rem;
 	}
 	.footer__bottom {
@@ -726,7 +720,10 @@
 	}
 	.product-info-container ~ .footer {
 		margin-bottom: 130px;
-	} */
+	}
+	.footer__download {
+		max-height: 343px;
+	}
 }
 
 /* Tablet*/
@@ -1077,7 +1074,7 @@
 		-ms-transform: translateY(10px);
 		-o-transform: translateY(10px);
 	}
-	/* .footer__content {
+	.footer__content {
 		padding: 0 17px;
 	}
 	.footer__heading {
@@ -1090,5 +1087,5 @@
 	.footer__download-app-link {
 		display: block;
 		padding: 6px 8px;
-	} */
+	}
 }
