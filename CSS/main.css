@@ -1459,8 +1459,8 @@ i.home-product-item__like-icon-fill {
 }
 
 .footer__download {
-  display: flex;
-  margin-top: 8px;
+  /* display: flex;
+  margin-top: 8px; */
 }
 
 .footer__download-qr {
