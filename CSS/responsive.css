@@ -651,6 +651,9 @@
 	#shop-checkbox-all {
 		margin: 0 0 0 10px ;
 	}
+	.cart-page-footer {
+		margin-top: 0;
+	}
 	.cart-page-footer__voucher-name {
 		font-size: 0.875rem;
 	}
@@ -719,17 +722,10 @@
 		/* display: none; */
 	}
 	.footer {
-		height: 200px;
-	}
-	.footer * {
-		margin: 0;
-		padding: 0;
+		height: 500px;
 	}
 	.footer-info {
 		/* margin-bottom: 20px; */
-	}
-	.footer-cart {
-		/* margin-bottom: 2000px; */
 	}
 	.footer * {
 		font-size: 0.78rem;
