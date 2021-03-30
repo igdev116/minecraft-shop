@@ -719,7 +719,11 @@
 		/* display: none; */
 	}
 	.footer {
-		/* height: 500px; */
+		height: 200px;
+	}
+	.footer * {
+		margin: 0;
+		padding: 0;
 	}
 	.footer-info {
 		/* margin-bottom: 20px; */
