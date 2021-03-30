@@ -609,9 +609,8 @@
 	}
 	.cart-page-footer__select-all {
 		font-size: 0.875rem;
-		text-overflow: ellipsis;
 		overflow: hidden;
-		white-space: nowrap;
+		padding-left: 0;
 	}
 	.cart-page-footer__summary {
 		min-width: unset;
@@ -652,7 +651,7 @@
 		-o-border-radius: 0;
 	}
 	#shop-checkbox-all {
-		margin: 0 0 0 10px ;
+		margin: 0 8px 0 10px ;
 	}
 	.cart-page-footer__voucher-name {
 		font-size: 0.875rem;
