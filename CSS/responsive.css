@@ -992,6 +992,16 @@
 	}
 
 	/* Info page */
+	.product__cards {
+		position: relative;
+	}
+	.product__cards-container {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
 	.product-btns-main {
 		background-color: white;
 		box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
