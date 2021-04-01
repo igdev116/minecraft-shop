@@ -133,7 +133,8 @@
 		width: 80px;
 	}
 	.product__cards-container {
-		overflow-x: scroll;
+		overflow-x: scroll !important;
+		-webkit-overflow-scrolling: touch;
 	}
 	.product__cards-container::-webkit-scrollbar {
 		display: none;
