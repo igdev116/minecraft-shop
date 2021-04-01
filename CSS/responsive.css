@@ -135,6 +135,7 @@
 	.product__cards-container {
 		overflow-x: scroll;
 		-webkit-overflow-scrolling: touch;
+		-webkit-transform: translateZ(0px);
 	}
 	.product__cards-container::-webkit-scrollbar {
 		display: none;
