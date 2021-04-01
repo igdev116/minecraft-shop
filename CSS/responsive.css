@@ -133,7 +133,7 @@
 		width: 80px;
 	}
 	.product__cards-container {
-		overflow-x: scroll;
+		overflow-x: auto;
 		-webkit-overflow-scrolling: touch;
 	}
 	.product__cards-container::-webkit-scrollbar {
@@ -208,9 +208,7 @@
 	.product__price-label {
 		font-size: 0.7rem;		
 		padding: 2px 4px;
-		height: 18px;
 		font-weight: 500;
-		line-height: 18px;
 		text-align: center;
 		min-width: unset;
 	}
