@@ -134,6 +134,7 @@
 	}
 	.product__cards-container {
 		overflow-x: scroll;
+		overflow-y: hidden;
 		-webkit-overflow-scrolling: touch;
 		-webkit-transform: translateZ(0px);
 	}
