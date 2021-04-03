@@ -425,7 +425,7 @@
 		font-size: 1.2rem;
 	}
 	.product-details {
-		padding: 0px;
+		padding: 0 0 6px;
 	}
 	.product-details__wrapper {
 		padding: 15px;
@@ -453,7 +453,15 @@
 	}
 	.product-description__content {
 		font-size: 0.8rem;
-		padding: 0 15px 15px;
+		padding: 0 15px 10px;
+		max-height: unset;
+		margin-bottom: 8px;
+	}
+	.read-more-btn__text {
+		font-size: 0.785rem;
+	}
+	.read-more-btn__icon {
+		font-size: 0.7rem;
 	}
 	.product-reviews {
 		padding: 15px 0;

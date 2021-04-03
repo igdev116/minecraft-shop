@@ -470,7 +470,6 @@ function renderProductInfo() {
 function slideInfoCard() {
     let cardsCtn = document.querySelector('.product__cards-container'); // get element of cards container
     let cards = document.querySelectorAll('.product__card-wrapper'); // get element of cards
-    console.log(cardsCtn)
     let prevBtn = document.querySelector('.product__cards-btn--prev'); // get element of prev button
     let nextBtn = document.querySelector('.product__cards-btn--next'); // get element of next  button
 
@@ -745,3 +744,30 @@ renderComboCards();
 // render toast message when voucher save button is clicked
 let btns = document.querySelectorAll('.product-vouchers__btn-save'); // get element of voucher save buttons
 sildeToastMsg(btns);
+
+function showMore() {
+    let proDesEl = document.querySelector('.product-description'); // get element of product description
+    let dots = proDesEl.querySelector('.dots'); // get element of dots
+    let textMore = proDesEl.querySelector('.text-more'); // get element of dots
+    let readMoreBtn = proDesEl.querySelector('.read-more-btn'); // get element of read more button
+    let readMoreBtnText = proDesEl.querySelector('.read-more-btn__text'); // get element of read more text
+    let iconDown = readMoreBtn.querySelector('.read-more-btn__icon--down'); // get element of icon down
+    let iconUp = readMoreBtn.querySelector('.read-more-btn__icon--up'); // get element of icon up
+
+    readMoreBtn.onclick = () => {
+        dots.classList.toggle('hidden');
+        textMore.classList.toggle('hidden');
+        iconDown.classList.toggle('hidden');
+        iconUp.classList.toggle('hidden');
+        readMoreBtnText.classList.toggle('text-show');
+        
+        
+        if (readMoreBtnText.classList.contains('text-show')) {
+            readMoreBtnText.innerHTML = 'Ẩn bớt';
+        } else {
+            readMoreBtnText.innerHTML = 'Xem thêm';
+        }
+    }
+}
+
+showMore();
