@@ -1,4 +1,4 @@
-Live Demo: https://minhhunghuynh1106.github.io/minecraft-shop
+Live Demo: https://igdev116.github.io/minecraft-shop
 
 Technologies: HTML, CSS, JavaScript
  
